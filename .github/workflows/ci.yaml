@@ -1,0 +1,84 @@
+name: Publish
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check_templated_files:
+    name: Ensure templated Dockerfiles are up to date
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate templates
+        run: python3 template.py values.yaml
+
+      - name: Fail if anything has changed
+        run: git diff --exit-code
+
+  create_matrix:
+    name: Create Matrix
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.create-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Create list of changed files
+        run: |
+          # See https://github.community/t/check-pushed-file-changes-with-git-diff-tree-in-github-actions/17220/10
+          if [ $GITHUB_BASE_REF ]; then
+            # Pull Request
+            git fetch origin $GITHUB_BASE_REF --depth=1
+            export DIFF=$( git diff --name-only origin/$GITHUB_BASE_REF $GITHUB_SHA )
+            echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA"
+          else
+            # Push
+            git fetch origin ${{ github.event.before }} --depth=1
+            export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
+            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA"
+          fi
+          echo "$DIFF" | tee changed_files.txt
+
+      - name: Create matrix of images to generate
+        id: create-matrix
+        run: |
+          # e.g. if we wanted to run the matrix for a set of platforms:
+          # echo "matrix=$(python3 matrix.py values.yaml --platforms n64 ps1 saturn)" >> $GITHUB_OUTPUT
+          echo "matrix=$(python3 matrix.py values.yaml --dockerfiles changed_files.txt)" >> $GITHUB_OUTPUT
+
+  run_matrix:
+    name: Run Matrix
+    permissions: write-all
+    runs-on: ubuntu-22.04
+    needs: [check_templated_files, create_matrix]
+    if: ${{ needs.create_matrix.outputs.matrix != '' && needs.create_matrix.outputs.matrix != '{"include":[]}' }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.create_matrix.outputs.matrix) }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push to Github registry
+        uses: docker/build-push-action@v4
+        with:
+          # only publish from main branch and don't publish on forks
+          push: ${{ github.ref == 'refs/heads/main' && ! github.event.pull_request.head.repo.fork }}
+          tags: ghcr.io/${{ github.repository }}/${{ matrix.image }}:latest
+          file: ${{ matrix.dockerfile }}

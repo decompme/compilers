@@ -1,0 +1,32 @@
+FROM alpine:3.18 as base
+
+RUN mkdir -p /compilers/{{ platform }}/{{ id }}
+
+{%- set filename = file.split("/")[-1].split("?")[0] %}
+
+RUN wget -O {{ filename }} "{{ file }}"
+RUN tar xvJf {{ filename }} --strip-components=1 -C /compilers/{{ platform }}/{{ id }}
+
+# we only need the clang-x.y.z binary
+RUN mv /compilers/{{ platform }}/{{ id }}/bin /compilers/{{ platform }}/{{ id }}/_bin
+RUN mkdir /compilers/{{ platform }}/{{ id }}/bin
+RUN mv /compilers/{{ platform }}/{{ id }}/_bin/{{ clang_binary }} /compilers/{{ platform }}/{{ id }}/bin
+RUN mv /compilers/{{ platform }}/{{ id }}/_bin/clang++ /compilers/{{ platform }}/{{ id }}/bin
+RUN mv /compilers/{{ platform }}/{{ id }}/_bin/clang /compilers/{{ platform }}/{{ id }}/bin
+RUN rm -rf /compilers/{{ platform }}/{{ id }}/_bin/
+
+RUN rm -rf /compilers/{{ platform }}/{{ id }}/libexec
+RUN rm -rf /compilers/{{ platform }}/{{ id }}/share
+
+ARG MUSL_HASH=25ed8669943bee65a650700d340e451eda2a26ba
+
+RUN wget -O musl.zip https://github.com/open-ead/botw-lib-musl/archive/${MUSL_HASH}.zip
+RUN unzip musl.zip
+RUN cp -r botw-lib-musl-${MUSL_HASH} /compilers/{{ platform }}/{{ id }}/
+
+RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
+
+
+FROM scratch as release
+
+COPY --from=base /compilers /compilers

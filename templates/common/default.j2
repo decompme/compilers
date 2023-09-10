@@ -1,0 +1,33 @@
+FROM alpine:3.18 as base
+
+RUN mkdir -p /compilers/{{ platform }}/{{ id }}
+{% for url in files | default([file]) | default([]) %}
+{% set filename = url.split("/")[-1].split("?")[0] %}
+{%- if filename.endswith('.tar.gz') -%}
+RUN wget -O {{ filename }} "{{ url }}"
+RUN tar xvzf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
+{%- elif filename.endswith('.tar.xz') -%}
+RUN wget -O {{ filename }} "{{ url }}"
+RUN tar xvJf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
+{%- elif filename.endswith('.tar.bz2') -%}
+RUN wget -O {{ filename }} "{{ url }}"
+RUN tar xvjf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
+{%- elif filename.endswith('.zip') -%}
+RUN wget -O {{ filename }} "{{ url }}"
+RUN unzip {{ filename }} -d /compilers/{{ platform }}/{{ id }}
+{%- else -%}
+RUN wget -O /compilers/{{ platform }}/{{ id }}/{{ filename }} "{{ url }}"
+{%- endif -%}
+{% endfor %}
+
+{%- for dir in rm_dirs | default([]) %}
+RUN rm -rf /compilers/{{ platform }}/{{ id }}/{{ dir }}
+{%- endfor %}
+
+RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
+RUN chmod +x /compilers/{{ platform }}/{{ id }}/*
+
+
+FROM scratch as release
+
+COPY --from=base /compilers /compilers

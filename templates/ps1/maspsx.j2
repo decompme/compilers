@@ -1,0 +1,26 @@
+FROM alpine:3.18 as base
+
+RUN mkdir -p /compilers/{{ platform }}/{{ id }}
+
+{%- set filename = file.split("/")[-1].split("?")[0] %}
+
+RUN wget -O {{ filename }} "{{ file }}"
+RUN tar xvzf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
+
+ARG MASPSX_HASH=44f8a152e5b49e56640fd3cfc20d6bf428e1205e
+
+RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
+RUN unzip maspsx.zip
+RUN cp -r maspsx-${MASPSX_HASH} /compilers/{{ platform }}/{{ id }}/maspsx
+
+RUN echo '#!/bin/bash' >> as
+RUN echo 'python3 $(dirname -- $0)/maspsx/maspsx.py --run-assembler --no-macro-inc -I${COMPILER_DIR} $@' >> as
+RUN cp as /compilers/{{ platform }}/{{ id }}/
+
+RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
+RUN chmod +x /compilers/{{ platform }}/{{ id }}/*
+
+
+FROM scratch as release
+
+COPY --from=base /compilers /compilers

@@ -1,0 +1,22 @@
+FROM alpine:3.18 as base
+
+# download xz first to allow for Docker caching
+
+WORKDIR /root
+
+{%- set filename = file.split("/")[-1].split("?")[0] %}
+
+RUN wget -O {{ filename }} "{{ file }}"
+RUN tar xvJf {{ filename }}
+
+RUN mkdir -p /compilers/{{ platform }}/{{ id }}
+
+RUN cp -r {{ package_dir | default(id) }}/* /compilers/{{ platform }}/{{ id }}
+
+RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
+RUN chmod +x /compilers/{{ platform }}/{{ id }}/*
+
+
+FROM scratch as release
+
+COPY --from=base /compilers /compilers

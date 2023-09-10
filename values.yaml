@@ -1,0 +1,688 @@
+compilers:
+# N64
+  - id: gcc2.7.2kmc
+    platform: n64
+    template: common/default
+    arch: linux
+    files:
+      - https://github.com/decompals/mips-gcc-2.7.2/releases/download/main/gcc-2.7.2-linux.tar.gz
+      - https://github.com/decompals/mips-binutils-2.6/releases/download/main/binutils-2.6-linux.tar.gz
+  - id: gcc2.7.2kmc
+    platform: n64
+    template: common/default
+    arch: darwin
+    files:
+      - https://github.com/decompals/mips-gcc-2.7.2/releases/download/main/gcc-2.7.2-mac.tar.gz
+      - https://github.com/decompals/mips-binutils-2.6/releases/download/main/binutils-2.6-mac.tar.gz
+
+  - id: gcc2.7.2sn
+    platform: n64
+    template: common/default
+    files:
+      - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/asn64.exe
+      - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/cc1n64.exe
+      - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/psyq-obj-parser
+
+  - id: gcc2.7.2snew
+    platform: n64
+    template: common/default
+    files:
+      - https://github.com/decompals/SN64-gcc/releases/download/gcc-2.7.2-970404/SN64-gcc-2.7.2-970404-linux.tar.gz
+      - https://github.com/RocketRet/modern-asn64/releases/download/main-release/modern-asn64.py
+
+  - id: gcc2.8.1pm
+    platform: n64
+    template: common/default
+    arch: linux
+    files:
+      - https://github.com/pmret/gcc-papermario/releases/download/master/linux.tar.gz
+      - https://github.com/pmret/binutils-papermario/releases/download/master/linux.tar.gz
+  - id: gcc2.8.1pm
+    platform: n64
+    template: common/default
+    arch: darwin
+    files:
+      - https://github.com/pmret/gcc-papermario/releases/download/master/mac.tar.gz
+      - https://github.com/pmret/binutils-papermario/releases/download/master/mac.tar.gz
+
+  - id: gcc2.8.1sn
+    platform: n64
+    template: common/default
+    files:
+      - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/asn64.exe
+      - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/cc1n64.exe
+      - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/cc1pln64.exe
+      - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/psyq-obj-parser
+
+  - id: ido5.3
+    platform: n64
+    template: common/default
+    arch: linux
+    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-5.3-recomp-ubuntu-20.04.tar.gz
+  - id: ido5.3
+    platform: n64
+    template: common/default
+    arch: darwin
+    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-5.3-recomp-macos-latest.tar.gz
+
+  - id: ido5.3_c++
+    platform: n64
+    template: common/default
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido5.3_c++.tar.xz
+
+  - id: ido6.0
+    platform: n64
+    template: common/default
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido6.0.tar.xz
+
+  - id: ido7.1
+    platform: n64
+    template: common/default
+    arch: linux
+    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-7.1-recomp-ubuntu-20.04.tar.gz
+  - id: ido7.1
+    platform: n64
+    template: common/default
+    arch: darwin
+    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-7.1-recomp-macos-latest.tar.gz
+
+  - id: mips_pro_744
+    platform: n64
+    template: common/default
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/mipspro7.4.4.tar.xz
+
+  - id: egcs_1.1.2-4
+    platform: n64
+    template: common/default
+    file: https://github.com/AngheloAlf/egcs_1.1.2-4/releases/download/latest/egcs_1.1.2-4.tar.gz
+
+  - id: gcc4.4.0-mips64-elf
+    platform: n64
+    template: common/default
+    file: https://github.com/devwizard64/gcc4.4.0-mips64-elf/releases/download/latest/gcc4.4.0-mips64-elf.tar.gz
+
+# PS1
+  - id: psyq3.3
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq3.3.tar.gz
+  - id: psyq3.5
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq3.5.tar.gz
+  - id: psyq3.6
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq3.6.tar.gz
+  - id: psyq4.0
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.0.tar.gz
+  - id: psyq4.1
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.1.tar.gz
+  - id: psyq4.3
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.3.tar.gz
+  - id: psyq4.4
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.4.tar.gz
+  - id: psyq4.5
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.5.tar.gz
+  - id: psyq4.6
+    platform: ps1
+    template: ps1/psyq
+    file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.6.tar.gz
+
+  - id: gcc2.6.3-psx
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.6.3-psx.tar.gz
+  - id: gcc2.6.3-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.6.3.tar.gz
+  - id: gcc2.7.1-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.7.1.tar.gz
+  - id: gcc2.7.2-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.7.2.tar.gz
+  - id: gcc2.7.2.1-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.7.2.1.tar.gz
+  - id: gcc2.7.2.2-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.7.2.2.tar.gz
+  - id: gcc2.7.2.3-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.7.2.3.tar.gz
+  - id: gcc2.8.0-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.8.0.tar.gz
+  - id: gcc2.8.1-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.8.1.tar.gz
+  - id: gcc2.91.66-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.91.66.tar.gz
+  - id: gcc2.95.2-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.95.2.tar.gz
+
+# PS2
+  - id: ee-gcc2.9-990721
+    platform: ps2
+    template: common/default
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1067306679806464060/ee-gcc2.9-990721.tar.xz
+  - id: ee-gcc2.9-991111
+    platform: ps2
+    template: common/default
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445542279954482/ee-gcc2.9-991111.tar.xz
+  - id: ee-gcc2.9-991111a
+    platform: ps2
+    template: common/default
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445479797395506/ee-gcc2.9-991111a.tar.xz
+  - id: ee-gcc2.9-991111-01
+    platform: ps2
+    template: common/default
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1119832299400331314/ee-gcc2.9-991111-01.tar.xz
+  - id: ee-gcc2.96
+    platform: ps2
+    template: common/default
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1067306680179752990/ee-gcc2.96.tar.xz
+  - id: ee-gcc3.2-040921
+    platform: ps2
+    template: common/default
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1067306680548855908/ee-gcc3.2-040921.tar.xz
+
+  - id: ee-gcc2.95.2-273a
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: ee-gcc2.95.2-274
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: ee-gcc2.95.3-107
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: ee-gcc2.95.3-114
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: ee-gcc2.95.3-136
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: mwcps2-2.3-991202
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: mwcps2-3.0b22-011126
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: mwcps2-3.0b22-020123
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: mwcps2-3.0b22-020716
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: mwcps2-3.0b22-020926
+    platform: ps2
+    template: common/xz
+    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+
+# MAXOSX
+  - id: gcc-5370
+    platform: macosx
+    template: common/default
+    files:
+      - https://github.com/ChrisNonyminus/powerpc-darwin-cross/releases/download/initial/gcc-5370.tar.gz
+      - https://gist.githubusercontent.com/ChrisNonyminus/ec53837b151a65e4233fa53604de4549/raw/d7c6fc639310b938fa519e68a8f8d4909acba2ad/convert_gas_syntax.py
+  - id: gcc-5026
+    platform: macosx
+    template: common/default
+    files:
+      - https://github.com/ChrisNonyminus/powerpc-darwin-cross/releases/download/initial/gcc-5026.tar.gz
+      - https://gist.githubusercontent.com/ChrisNonyminus/ec53837b151a65e4233fa53604de4549/raw/d7c6fc639310b938fa519e68a8f8d4909acba2ad/convert_gas_syntax.py
+  - id: gcc-5363
+    platform: macosx
+    template: common/default
+    files:
+      - https://github.com/ChrisNonyminus/powerpc-darwin-cross/releases/download/initial/gcc-5363.tar.gz
+      - https://gist.githubusercontent.com/ChrisNonyminus/ec53837b151a65e4233fa53604de4549/raw/d7c6fc639310b938fa519e68a8f8d4909acba2ad/convert_gas_syntax.py
+  - id: gcc3-1041
+    platform: macosx
+    template: common/default
+    files:
+      - https://github.com/ChrisNonyminus/powerpc-darwin-cross/releases/download/initial/gcc3-1041.tar.gz
+      - https://gist.githubusercontent.com/ChrisNonyminus/ec53837b151a65e4233fa53604de4549/raw/d7c6fc639310b938fa519e68a8f8d4909acba2ad/convert_gas_syntax.py
+
+# GBA
+  - id: agbcc
+    platform: gba
+    template: common/default
+    file: https://github.com/pret/agbcc/releases/download/release/agbcc.tar.gz
+  - id: agbccpp
+    platform: gba
+    template: common/default
+    file: https://github.com/notyourav/agbcc/releases/download/cp/agbcc.tar.gz
+
+# SATURN
+  - id: cygnus-2.7-96Q3
+    platform: saturn
+    template: common/zip
+    package_dir: saturn-compilers-*/cygnus-2.7-96Q3-bin
+    file: https://github.com/sozud/saturn-compilers/archive/af27f4aa6566c1b0fa5332b488e63d6ffd28bd48.zip
+
+# SWITCH
+  - id: clang-3.9.1
+    arch: linux
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/3.9.1/clang+llvm-3.9.1-x86_64-linux-gnu-debian8.tar.xz
+    clang_binary: clang-3.9
+  # 3.9.1 is not available for mac
+  # - id: clang-3.9.1
+  #   arch: darwin
+  #   platform: switch
+  #   file: https://releases.llvm.org/3.9.1/clang+llvm-3.9.1-x86_64-apple-darwin.tar.xz
+  #   clang_binary: clang-3.9
+  - id: clang-4.0.1
+    arch: linux
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/4.0.1/clang+llvm-4.0.1-x86_64-linux-gnu-debian8.tar.xz
+    clang_binary: clang-4.0
+  - id: clang-4.0.1
+    arch: darwin
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/4.0.1/clang+llvm-4.0.1-x86_64-apple-darwin.tar.xz
+    clang_binary: clang-4.0
+  - id: clang-8.0.0
+    arch: linux
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/8.0.0/clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz
+    clang_binary: clang-8
+  - id: clang-8.0.0
+    arch: darwin
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/8.0.0/clang+llvm-8.0.0-x86_64-apple-darwin.tar.xz
+    clang_binary: clang-8
+
+# NDS
+  - id: mwcc_20_72
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/1.2/base
+  - id: mwcc_20_79
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/1.2/sp2
+  - id: mwcc_20_82
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/1.2/sp2p3
+  - id: mwcc_20_84
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/1.2/sp3
+  - id: mwcc_20_87
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/1.2/sp4
+
+  - id: mwcc_30_114
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/base
+  - id: mwcc_30_123
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp1
+  - id: mwcc_30_126
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp1p2
+  - id: mwcc_30_131
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp1p5
+  - id: mwcc_30_133
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp1p6
+  - id: mwcc_30_134
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp1p7
+  - id: mwcc_30_136
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp2
+  - id: mwcc_30_137
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp2p2
+  - id: mwcc_30_138
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp2p3
+  - id: mwcc_30_139
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/2.0/sp2p4
+
+  - id: mwcc_40_1018
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.1
+  - id: mwcc_40_1024
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.1p1
+  - id: mwcc_40_1026
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.2
+  - id: mwcc_40_1027
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.2p1
+  - id: mwcc_40_1028
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.2p2
+  - id: mwcc_40_1034
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.3
+  - id: mwcc_40_1036
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.3p1
+  - id: mwcc_40_1051
+    platform: nds_arm9
+    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    template: nds/mwccarm
+    package_dir: mwccarm/dsi/1.6sp1
+
+# 3DS
+  - id: armcc_40_771
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.0/b771
+  - id: armcc_40_821
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.0/b821
+
+  - id: armcc_41_561
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b561
+  - id: armcc_41_713
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b713
+  - id: armcc_41_791
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b791
+  - id: armcc_41_894
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b894
+  - id: armcc_41_921
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b921
+  - id: armcc_41_1049
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b1049
+  - id: armcc_41_1440
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b1440
+  - id: armcc_41_1454
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 4.1/b1454
+
+  - id: armcc_504_82
+    platform: n3ds
+    template: common/zip
+    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    package_dir: 5.04/b82
+
+# WII & GCC
+  - id: mwcc_233_144
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/1.0
+  - id: mwcc_233_159
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/1.1
+  - id: mwcc_233_163
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/1.2.5
+  - id: mwcc_233_163n
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/1.2.5n
+  - id: mwcc_242_81
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/1.3.2
+  - id: mwcc_247_92
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/2.0
+  - id: mwcc_247_105
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/2.5
+  - id: mwcc_247_107
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/2.6
+  - id: mwcc_247_108
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/2.7
+  - id: mwcc_41_60831
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/3.0
+  - id: mwcc_41_60126
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/3.0a3
+
+  - id: mwcc_42_142
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: Wii/1.0
+  - id: mwcc_43_151
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: Wii/1.1
+  - id: mwcc_43_172
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: Wii/1.3
+  - id: mwcc_43_213
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: Wii/1.7
+
+  - id: mwcc_242_81r
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/598600200084258822/1136883349642825728/MWCCEPPC_1.3.2r.zip
+    package_dir: 1.3.2r
+
+  - id: mwcc_233_163e
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: GC/1.2.5e
+    frank_mwcceppc: GC/1.2.5
+
+  - id: mwcc_42_127
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip
+    package_dir: Wii/1.0
+    patched_exe: https://cdn.discordapp.com/attachments/804212941054279722/954854566304833567/mwcceppc_PATCHED.exe
+
+# DOS
+  - id: wcc10.5
+    platform: msdos
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/wcc10.5/wcc10.5.tar.gz
+  - id: wcc10.5a
+    platform: msdos
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/wcc10.5/wcc10.5a.tar.gz
+  - id: wcc10.6
+    platform: msdos
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/wcc10.5/wcc10.6.tar.gz
+  - id: wcc11.0
+    platform: msdos
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/wcc10.5/wcc11.0.tar.gz
+
+# WIN9X
+  - id: msvc6.0
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.0.tar.gz
+    rm_dirs:
+      - MFC
+  - id: msvc6.3
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.3.tar.gz
+    rm_dirs:
+      - MFC
+  - id: msvc6.4
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.4.tar.gz
+    rm_dirs:
+      - MFC
+  - id: msvc6.5
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.5.tar.gz
+    rm_dirs:
+      - MFC
+  - id: msvc6.5pp
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.5pp.tar.gz
+    rm_dirs:
+      - MFC
+  - id: msvc6.6
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.6.tar.gz
+    rm_dirs:
+      - MFC
+  - id: msvc7.0
+    platform: win9x
+    template: common/default
+    file: https://github.com/roblabla/MSVC-7.0-Portable/releases/download/release/msvc7.0.tar.gz
+  - id: msvc7.1
+    platform: win9x
+    template: common/default
+    file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc7.0.tar.gz
+    rm_dirs:
+      - MFC
+
+  - id: msvc4.0
+    platform: win9x
+    template: win9x/msvc
+    file: https://github.com/itsmattkc/MSVC400/archive/821e942fd95bd16d01649401de7943ef87ae9f54.zip
+    bin_dir: MSVC400-*/BIN
+    include_dir: MSVC400-*/INCLUDE
+  - id: msvc4.2
+    platform: win9x
+    template: win9x/msvc
+    file: https://github.com/itsmattkc/MSVC420/archive/df2c13aad74c094988c6c7e784234c2e778a0e91.zip
+    bin_dir: MSVC420-*/bin
+    include_dir: MSVC420-*/include

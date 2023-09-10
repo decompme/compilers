@@ -1,0 +1,22 @@
+FROM alpine:3.18 as base
+
+# download zip first to allow for Docker caching
+
+{%- set filename = file.split("/")[-1].split("?")[0] %}
+
+RUN wget -O {{ filename }} "{{ file }}"
+RUN unzip {{ filename }}
+
+RUN mkdir -p /compilers/{{ platform }}/{{ id }}/Bin
+RUN mkdir -p /compilers/{{ platform }}/{{ id }}/Include
+
+RUN cp -r {{ bin_dir }}/*     /compilers/{{ platform }}/{{ id }}/Bin
+RUN cp -r {{ include_dir }}/* /compilers/{{ platform }}/{{ id }}/Include
+
+RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
+RUN chmod +x /compilers/{{ platform }}/{{ id }}/Bin/*
+
+
+FROM scratch as release
+
+COPY --from=base /compilers /compilers
