@@ -5,7 +5,7 @@ FROM alpine:3.18 as base
 
 RUN mkdir -p /compilers/ps1/gcc2.95.2-mipsel
 
-RUN wget -O gcc-2.95.2.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.3/gcc-2.95.2.tar.gz"
+RUN wget -O gcc-2.95.2.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.95.2.tar.gz"
 RUN tar xvzf gcc-2.95.2.tar.gz -C /compilers/ps1/gcc2.95.2-mipsel
 
 ARG MASPSX_HASH=e78f35007690114ffb12cc2220e785d512e38cc2
