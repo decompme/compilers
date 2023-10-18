@@ -616,6 +616,19 @@ compilers:
     package_dir: Wii/1.0
     patched_exe: https://cdn.discordapp.com/attachments/804212941054279722/954854566304833567/mwcceppc_PATCHED.exe
 
+  - id: prodg_35
+    platform: gc_wii
+    template: gc_wii/prodg
+    file: https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.5.tar.gz
+  - id: prodg_37
+    platform: gc_wii
+    template: gc_wii/prodg
+    file: https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.7.tar.gz
+  - id: prodg_393
+    platform: gc_wii
+    template: gc_wii/prodg
+    file: https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.9.3.tar.gz
+
 # DOS
   - id: wcc10.5
     platform: msdos
