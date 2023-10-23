@@ -618,16 +618,16 @@ compilers:
 
   - id: prodg_35
     platform: gc_wii
-    template: gc_wii/prodg
-    file: https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.5.tar.gz
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_35.tar.gz
   - id: prodg_37
     platform: gc_wii
-    template: gc_wii/prodg
-    file: https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.7.tar.gz
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_37.tar.gz
   - id: prodg_393
     platform: gc_wii
-    template: gc_wii/prodg
-    file: https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.9.3.tar.gz
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_393.tar.gz
 
 # DOS
   - id: wcc10.5

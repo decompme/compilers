@@ -5,8 +5,8 @@ FROM alpine:3.18 as base
 
 RUN mkdir -p /compilers/gc_wii/prodg_35
 
-RUN wget -O ProDG-v3.5.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/ProDG-v3.5.tar.gz"
-RUN tar xvzf ProDG-v3.5.tar.gz --strip-components=1 -C /compilers/gc_wii/prodg_35
+RUN wget -O prodg_35.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/prodg_35.tar.gz"
+RUN tar xvzf prodg_35.tar.gz -C /compilers/gc_wii/prodg_35
 
 RUN chown -R root:root /compilers/gc_wii/prodg_35/
 RUN chmod +x /compilers/gc_wii/prodg_35/*
