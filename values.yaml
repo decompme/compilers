@@ -1,3 +1,8 @@
+vars:
+  - &wii_gc_compilers https://files.decomp.dev/compilers_latest.zip?2023-10-26
+  - &nds_mwcc https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+  - &3ds_armcc https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+
 compilers:
 # N64
   - id: gcc2.7.2kmc
@@ -343,119 +348,119 @@ compilers:
 # NDS
   - id: mwcc_20_72
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/1.2/base
   - id: mwcc_20_79
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/1.2/sp2
   - id: mwcc_20_82
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/1.2/sp2p3
   - id: mwcc_20_84
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/1.2/sp3
   - id: mwcc_20_87
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/1.2/sp4
 
   - id: mwcc_30_114
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/base
   - id: mwcc_30_123
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp1
   - id: mwcc_30_126
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp1p2
   - id: mwcc_30_131
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp1p5
   - id: mwcc_30_133
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp1p6
   - id: mwcc_30_134
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp1p7
   - id: mwcc_30_136
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp2
   - id: mwcc_30_137
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp2p2
   - id: mwcc_30_138
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp2p3
   - id: mwcc_30_139
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/2.0/sp2p4
 
   - id: mwcc_40_1018
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.1
   - id: mwcc_40_1024
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.1p1
   - id: mwcc_40_1026
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.2
   - id: mwcc_40_1027
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.2p1
   - id: mwcc_40_1028
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.2p2
   - id: mwcc_40_1034
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.3
   - id: mwcc_40_1036
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.3p1
   - id: mwcc_40_1051
     platform: nds_arm9
-    file: https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
+    file: *nds_mwcc
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.6sp1
 
@@ -463,193 +468,193 @@ compilers:
   - id: armcc_40_771
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.0/b771
   - id: armcc_40_821
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.0/b821
 
   - id: armcc_41_561
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b561
   - id: armcc_41_713
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b713
   - id: armcc_41_791
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b791
   - id: armcc_41_894
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b894
   - id: armcc_41_921
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b921
   - id: armcc_41_1049
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b1049
   - id: armcc_41_1440
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b1440
   - id: armcc_41_1454
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 4.1/b1454
 
   - id: armcc_504_82
     platform: n3ds
     template: common/zip
-    file: https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+    file: *3ds_armcc
     package_dir: 5.04/b82
 
 # WII & GCC
   - id: mwcc_233_144
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.0
   - id: mwcc_233_159
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.1
   - id: mwcc_233_163
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.2.5
   - id: mwcc_233_163n
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.2.5n
   - id: mwcc_242_81
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.3.2
   - id: mwcc_242_81r
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.3.2r
   - id: mwcc_247_92
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/2.0
   - id: mwcc_247_105
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/2.5
   - id: mwcc_247_107
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/2.6
   - id: mwcc_247_108
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/2.7
   - id: mwcc_41_51213
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/3.0a3
   - id: mwcc_41_60126
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/3.0a3.2
   - id: mwcc_41_60209
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/3.0a3.3
   - id: mwcc_41_60308
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/3.0a3.4
   - id: mwcc_41_60422
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/3.0a5
   - id: mwcc_41_60831
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/3.0a5.2
 
   - id: mwcc_42_127
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/0x4201_127
   - id: mwcc_42_140
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.0RC1
   - id: mwcc_42_142
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.0a
   - id: mwcc_42_145
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.0
   - id: mwcc_43_151
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.1
   - id: mwcc_43_172
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.3
   - id: mwcc_43_188
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.5
   - id: mwcc_43_202
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.6
   - id: mwcc_43_213
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: Wii/1.7
 
   - id: mwcc_233_163e
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    file: *wii_gc_compilers
     package_dir: GC/1.2.5e
     frank_mwcceppc: GC/1.2.5
 
