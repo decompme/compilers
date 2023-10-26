@@ -2,7 +2,7 @@ name: Publish
 on:
   push:
     branches:
-      - "*"
+      - main
   pull_request:
     branches: [ main ]
 
@@ -31,14 +31,13 @@ jobs:
 
       - name: Create list of changed files
         run: |
-          # See https://github.community/t/check-pushed-file-changes-with-git-diff-tree-in-github-actions/17220/10
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            # Pull Request
-            git fetch origin ${{ github.event.pull_request.base.ref }} --depth=1
-            export DIFF=$( git diff --name-only ${{ github.event.pull_request.base.ref }} $GITHUB_SHA )
-            echo "Diff between origin/${{ github.event.pull_request.base.ref }} and $GITHUB_SHA"
+            echo "Pull Request"
+            git fetch origin ${{ github.event.pull_request.base.sha }} --depth=1
+            export DIFF=$( git diff --name-only ${{ github.event.pull_request.base.sha }} $GITHUB_SHA )
+            echo "Diff between origin/${{ github.event.pull_request.base.sha }} and $GITHUB_SHA"
           else
-            # Push
+            echo "Push"
             git fetch origin ${{ github.event.before }} --depth=1
             export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
             echo "Diff between ${{ github.event.before }} and $GITHUB_SHA"
