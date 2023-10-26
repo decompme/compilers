@@ -32,11 +32,11 @@ jobs:
       - name: Create list of changed files
         run: |
           # See https://github.community/t/check-pushed-file-changes-with-git-diff-tree-in-github-actions/17220/10
-          if [ $GITHUB_BASE_REF ]; then
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
             # Pull Request
-            git fetch origin $GITHUB_BASE_REF --depth=1
-            export DIFF=$( git diff --name-only origin/$GITHUB_BASE_REF $GITHUB_SHA )
-            echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA"
+            git fetch origin ${{ github.event.pull_request.base.ref }} --depth=1
+            export DIFF=$( git diff --name-only ${{ github.event.pull_request.base.ref }} $GITHUB_SHA )
+            echo "Diff between origin/${{ github.event.pull_request.base.ref }} and $GITHUB_SHA"
           else
             # Push
             git fetch origin ${{ github.event.before }} --depth=1
