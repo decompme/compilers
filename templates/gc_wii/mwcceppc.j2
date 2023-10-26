@@ -30,11 +30,6 @@ RUN cp -r {{ frank_mwcceppc }}/mwcceppc.exe /compilers/{{ platform }}/{{ id }}/m
 RUN chmod +x /compilers/{{ platform }}/{{ id }}/mwcceppc.125.exe
 {%- endif %}
 
-{%- if patched_exe is defined %}
-RUN wget -O /compilers/{{ platform }}/{{ id }}/mwcceppc.exe "{{ patched_exe }}"
-RUN chmod +x /compilers/{{ platform }}/{{ id }}/mwcceppc.exe
-{%- endif %}
-
 RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
 
 

@@ -32,15 +32,13 @@ jobs:
       - name: Create list of changed files
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            echo "Pull Request"
+            echo "Diff between origin/${{ github.event.pull_request.base.sha }} and $GITHUB_SHA"
             git fetch origin ${{ github.event.pull_request.base.sha }} --depth=1
             export DIFF=$( git diff --name-only ${{ github.event.pull_request.base.sha }} $GITHUB_SHA )
-            echo "Diff between origin/${{ github.event.pull_request.base.sha }} and $GITHUB_SHA"
           else
-            echo "Push"
+            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA"
             git fetch origin ${{ github.event.before }} --depth=1
             export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
-            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA"
           fi
           echo "$DIFF" | tee changed_files.txt
 

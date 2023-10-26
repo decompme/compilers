@@ -544,6 +544,11 @@ compilers:
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
     package_dir: GC/1.3.2
+  - id: mwcc_242_81r
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: 1.3.2r
   - id: mwcc_247_92
     platform: gc_wii
     template: gc_wii/mwcceppc
@@ -564,18 +569,53 @@ compilers:
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
     package_dir: GC/2.7
-  - id: mwcc_41_60831
-    platform: gc_wii
-    template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
-    package_dir: GC/3.0
-  - id: mwcc_41_60126
+  - id: mwcc_41_51213
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
     package_dir: GC/3.0a3
+  - id: mwcc_41_60126
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: GC/3.0a3.2
+  - id: mwcc_41_60209
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: GC/3.0a3.3
+  - id: mwcc_41_60308
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: GC/3.0a3.4
+  - id: mwcc_41_60422
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: GC/3.0a5
+  - id: mwcc_41_60831
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: GC/3.0a5.2
 
+  - id: mwcc_42_127
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: Wii/0x4201_127
+  - id: mwcc_42_140
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: Wii/1.0RC1
   - id: mwcc_42_142
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: Wii/1.0a
+  - id: mwcc_42_145
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
@@ -590,17 +630,21 @@ compilers:
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
     package_dir: Wii/1.3
+  - id: mwcc_43_188
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: Wii/1.5
+  - id: mwcc_43_202
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
+    package_dir: Wii/1.6
   - id: mwcc_43_213
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
     package_dir: Wii/1.7
-
-  - id: mwcc_242_81r
-    platform: gc_wii
-    template: gc_wii/mwcceppc
-    file: https://cdn.discordapp.com/attachments/598600200084258822/1136883349642825728/MWCCEPPC_1.3.2r.zip
-    package_dir: 1.3.2r
 
   - id: mwcc_233_163e
     platform: gc_wii
@@ -608,13 +652,6 @@ compilers:
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
     package_dir: GC/1.2.5e
     frank_mwcceppc: GC/1.2.5
-
-  - id: mwcc_42_127
-    platform: gc_wii
-    template: gc_wii/mwcceppc
-    file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
-    package_dir: Wii/1.0
-    patched_exe: https://cdn.discordapp.com/attachments/804212941054279722/954854566304833567/mwcceppc_PATCHED.exe
 
   - id: prodg_35
     platform: gc_wii

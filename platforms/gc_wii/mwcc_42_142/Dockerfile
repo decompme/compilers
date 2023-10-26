@@ -12,7 +12,7 @@ RUN unzip compilers_latest.zip
 
 RUN mkdir -p /compilers/gc_wii/mwcc_42_142
 
-RUN cp -r Wii/1.0/* /compilers/gc_wii/mwcc_42_142
+RUN cp -r Wii/1.0a/* /compilers/gc_wii/mwcc_42_142
 
 RUN chmod +x /compilers/gc_wii/mwcc_42_142/mwcceppc.exe
 RUN touch /compilers/gc_wii/mwcc_42_142/license.dat
