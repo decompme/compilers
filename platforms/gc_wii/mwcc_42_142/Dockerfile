@@ -7,12 +7,12 @@ FROM alpine:3.18 as base
 
 WORKDIR /root
 
-RUN wget -O GC_WII_COMPILERS.zip "https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip"
-RUN unzip GC_WII_COMPILERS.zip
+RUN wget -O compilers_latest.zip "https://files.decomp.dev/compilers_latest.zip?2023-10-26"
+RUN unzip compilers_latest.zip
 
 RUN mkdir -p /compilers/gc_wii/mwcc_42_142
 
-RUN cp -r Wii/1.0/* /compilers/gc_wii/mwcc_42_142
+RUN cp -r Wii/1.0a/* /compilers/gc_wii/mwcc_42_142
 
 RUN chmod +x /compilers/gc_wii/mwcc_42_142/mwcceppc.exe
 RUN touch /compilers/gc_wii/mwcc_42_142/license.dat

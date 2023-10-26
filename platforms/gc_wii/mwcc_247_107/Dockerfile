@@ -7,8 +7,8 @@ FROM alpine:3.18 as base
 
 WORKDIR /root
 
-RUN wget -O GC_WII_COMPILERS.zip "https://cdn.discordapp.com/attachments/727918646525165659/1129759991696457728/GC_WII_COMPILERS.zip"
-RUN unzip GC_WII_COMPILERS.zip
+RUN wget -O compilers_latest.zip "https://files.decomp.dev/compilers_latest.zip?2023-10-26"
+RUN unzip compilers_latest.zip
 
 RUN mkdir -p /compilers/gc_wii/mwcc_247_107
 
