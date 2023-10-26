@@ -5,10 +5,10 @@ FROM alpine:3.18 as base
 
 RUN mkdir -p /compilers/ps1/gcc2.8.0-mipsel
 
-RUN wget -O gcc-2.8.0.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.8.0.tar.gz"
+RUN wget -O gcc-2.8.0.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.8.0.tar.gz"
 RUN tar xvzf gcc-2.8.0.tar.gz -C /compilers/ps1/gcc2.8.0-mipsel
 
-ARG MASPSX_HASH=ccf0f4d3e9191103de0a7f1112ef68d908be92f0
+ARG MASPSX_HASH=ae43f009e319d55362423e2bc1fb96bc7d55aa47
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
