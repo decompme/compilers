@@ -144,58 +144,66 @@ compilers:
     template: ps1/psyq
     file: https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.6.tar.gz
 
+  - id: gcc2.5.7-mipsel
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.5.7.tar.gz
+  - id: gcc2.5.7-psx
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.5.7-psx.tar.gz
   - id: gcc2.6.0-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.6.0.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.6.0.tar.gz
   - id: gcc2.6.3-psx
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.6.3-psx.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.6.3-psx.tar.gz
   - id: gcc2.6.3-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.6.3.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.6.3.tar.gz
   - id: gcc2.7.0-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.7.0.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.7.0.tar.gz
   - id: gcc2.7.1-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.7.1.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.7.1.tar.gz
   - id: gcc2.7.2-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.7.2.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.7.2.tar.gz
   - id: gcc2.7.2.1-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.7.2.1.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.7.2.1.tar.gz
   - id: gcc2.7.2.2-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.7.2.2.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.7.2.2.tar.gz
   - id: gcc2.7.2.3-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.7.2.3.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.7.2.3.tar.gz
   - id: gcc2.8.0-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.8.0.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.8.0.tar.gz
   - id: gcc2.8.1-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.8.1.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.8.1.tar.gz
   - id: gcc2.91.66-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.91.66.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.91.66.tar.gz
   - id: gcc2.95.2-mipsel
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.5/gcc-2.95.2.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.6/gcc-2.95.2.tar.gz
 
 # PS2
   - id: ee-gcc2.9-990721
