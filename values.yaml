@@ -548,7 +548,7 @@ compilers:
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: https://files.decomp.dev/compilers_latest.zip?2023-10-26
-    package_dir: 1.3.2r
+    package_dir: GC/1.3.2r
   - id: mwcc_247_92
     platform: gc_wii
     template: gc_wii/mwcceppc
