@@ -5,7 +5,7 @@ FROM alpine:3.18 as base
 
 RUN mkdir -p /compilers/ps1/gcc2.5.7-psx
 
-RUN wget -O gcc-2.5.7-psx.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.5.7-psx.tar.gz"
+RUN wget -O gcc-2.5.7-psx.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.8/gcc-2.5.7-psx.tar.gz"
 RUN tar xvzf gcc-2.5.7-psx.tar.gz -C /compilers/ps1/gcc2.5.7-psx
 
 ARG MASPSX_HASH=8b565689d5c02357b8b5d79dcd6f2290a7b7be92
