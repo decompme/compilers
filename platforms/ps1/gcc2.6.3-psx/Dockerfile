@@ -8,7 +8,7 @@ RUN mkdir -p /compilers/ps1/gcc2.6.3-psx
 RUN wget -O gcc-2.6.3-psx.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.6.3-psx.tar.gz"
 RUN tar xvzf gcc-2.6.3-psx.tar.gz -C /compilers/ps1/gcc2.6.3-psx
 
-ARG MASPSX_HASH=f72bdcb1000d731204c1f6e277f872750b0b54c1
+ARG MASPSX_HASH=c263a0436517e6aeb5d0fc434527295161838b8b
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
