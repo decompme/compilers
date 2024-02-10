@@ -272,6 +272,25 @@ compilers:
     template: common/xz
     file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
 
+# PSP
+  - id: mwccpsp_3.0.1_121
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwccpsp_3.0.1_121.tar.gz
+  - id: mwccpsp_3.0.1_147
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwccpsp_3.0.1_147.tar.gz
+  - id: mwccpsp_3.0.1_151
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwccpsp_3.0.1_151.tar.gz
+
+  - id: pspsnc_1.2.7503.0
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/pspsnc_1.2.7503.0.tar.gz
+
 # MAXOSX
   - id: gcc-5370
     platform: macosx
