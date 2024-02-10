@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate templates
         run: python3 template.py values.yaml
@@ -27,7 +27,7 @@ jobs:
       matrix: ${{ steps.create-matrix.outputs.matrix }}
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Create list of changed files
         run: |
@@ -60,7 +60,7 @@ jobs:
       matrix: ${{ fromJson(needs.create_matrix.outputs.matrix) }}
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -73,7 +73,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push to Github registry
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           # only publish from main branch and don't publish on forks
           push: ${{ github.ref == 'refs/heads/main' && ! github.event.pull_request.head.repo.fork }}
