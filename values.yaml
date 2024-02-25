@@ -716,63 +716,63 @@ compilers:
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/wcc10.5/wcc11.0.tar.gz
 
-# WIN9X
+# WIN32
   - id: msvc6.0
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.0.tar.gz
     rm_dirs:
       - MFC
   - id: msvc6.3
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.3.tar.gz
     rm_dirs:
       - MFC
   - id: msvc6.4
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.4.tar.gz
     rm_dirs:
       - MFC
   - id: msvc6.5
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.5.tar.gz
     rm_dirs:
       - MFC
   - id: msvc6.5pp
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.5pp.tar.gz
     rm_dirs:
       - MFC
   - id: msvc6.6
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.6.tar.gz
     rm_dirs:
       - MFC
   - id: msvc7.0
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/roblabla/MSVC-7.0-Portable/releases/download/release/msvc7.0.tar.gz
   - id: msvc7.1
-    platform: win9x
+    platform: win32
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc7.0.tar.gz
     rm_dirs:
       - MFC
 
   - id: msvc4.0
-    platform: win9x
-    template: win9x/msvc
+    platform: win32
+    template: win32/msvc
     file: https://github.com/itsmattkc/MSVC400/archive/821e942fd95bd16d01649401de7943ef87ae9f54.zip
     bin_dir: MSVC400-*/BIN
     include_dir: MSVC400-*/INCLUDE
   - id: msvc4.2
-    platform: win9x
-    template: win9x/msvc
+    platform: win32
+    template: win32/msvc
     file: https://github.com/itsmattkc/MSVC420/archive/df2c13aad74c094988c6c7e784234c2e778a0e91.zip
     bin_dir: MSVC420-*/bin
     include_dir: MSVC420-*/include
