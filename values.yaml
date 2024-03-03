@@ -73,7 +73,7 @@ compilers:
   - id: ido5.3_c++
     platform: n64
     template: common/default
-    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido5.3_c++.tar.xz
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido5.3_c++.tar.xz?2024-03-03
 
   - id: ido6.0
     platform: n64
