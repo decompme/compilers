@@ -8,7 +8,7 @@ RUN mkdir -p /compilers/ps1/gcc2.95.2-mipsel
 RUN wget -O gcc-2.95.2.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.95.2.tar.gz"
 RUN tar xvzf gcc-2.95.2.tar.gz -C /compilers/ps1/gcc2.95.2-mipsel
 
-ARG MASPSX_HASH=d19cddd9ed40e389e1e7c35e46fd5a768504a66f
+ARG MASPSX_HASH=2c8fc98ab30f2b7a9e6a642cfb76c8c0e610d3f9
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
