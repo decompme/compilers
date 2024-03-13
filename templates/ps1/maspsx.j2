@@ -7,7 +7,7 @@ RUN mkdir -p /compilers/{{ platform }}/{{ id }}
 RUN wget -O {{ filename }} "{{ file }}"
 RUN tar xvzf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
 
-ARG MASPSX_HASH=5d9f1a897ebb7d8d4aa9cc8a10a88b70d7c355ab
+ARG MASPSX_HASH=79b376a46c0929c7c86ec70f5e2db9ef8ffd1d9c
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
