@@ -277,6 +277,14 @@ compilers:
     platform: psp
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/mwccpsp_3.0.1_121.tar.gz
+  - id: mwccpsp_3.0.1_134
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwccpsp_3.0.1_134.tar.gz
+  - id: mwccpsp_3.0.1_139
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwccpsp_3.0.1_139.tar.gz
   - id: mwccpsp_3.0.1_147
     platform: psp
     template: common/default
