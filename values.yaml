@@ -299,6 +299,11 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/pspsnc_1.2.7503.0.tar.gz
 
+  - id: psp-gcc-1.3.1
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/psp-gcc-1.3.1.tar.gz
+
 # MAXOSX
   - id: gcc-5370
     platform: macosx
