@@ -724,7 +724,7 @@ compilers:
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
     package_dir: Wii/1.0a
-  - id: mwcc_42_145
+  - id: mwcc_43_145
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
