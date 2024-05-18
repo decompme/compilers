@@ -271,6 +271,46 @@ compilers:
     platform: ps2
     template: common/xz
     file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+  - id: mwcps2-3.0b52-030722
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0b52-030722.tar.gz
+  - id: mwcps2-3.0.1b74-030811
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b74-030811.tar.gz
+  - id: mwcps2-3.0.1b87-031208
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b87-031208.tar.gz
+  - id: mwcps2-3.0.1b95-040309
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b95-040309.tar.gz
+  - id: mwcps2-3.0.1b119-040914
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b119-040914.tar.gz
+  - id: mwcps2-3.0.1b145-050209
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b145-050209.tar.gz
+  - id: mwcps2-3.0.1b151-050317
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b151-050317.tar.gz
+  - id: mwcps2-3.0.1b198-051011
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b198-051011.tar.gz
+  - id: mwcps2-3.0.1b205-051227
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b205-051227.tar.gz
+  - id: mwcps2-3.0.1b210-060308
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b210-060308.tar.gz
 
 # PSP
   - id: mwccpsp_3.0.1_121
