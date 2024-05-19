@@ -273,11 +273,11 @@ compilers:
     file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
   - id: mwcps2-3.0b38-030307
     platform: ps2
-    template: common/xz
+    template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0b38-030307.tar.gz
   - id: mwcps2-3.0b50-030527
     platform: ps2
-    template: common/xz
+    template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0b50-030527.tar.gz
   - id: mwcps2-3.0b52-030722
     platform: ps2
