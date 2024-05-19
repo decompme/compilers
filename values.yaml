@@ -713,12 +713,12 @@ compilers:
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
     package_dir: GC/3.0a3.3
-  - id: mwcc_41_60308
+  - id: mwcc_42_60308
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
     package_dir: GC/3.0a3.4
-  - id: mwcc_41_60422
+  - id: mwcc_42_60422
     platform: gc_wii
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
