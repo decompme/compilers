@@ -287,6 +287,10 @@ compilers:
     platform: ps2
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b44-030325.tar.gz
+  - id: mwcps2-3.0.1b51-030512
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b51-030512.tar.gz
   - id: mwcps2-3.0.1b74-030811
     platform: ps2
     template: common/default
