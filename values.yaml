@@ -885,3 +885,9 @@ compilers:
     file: https://github.com/itsmattkc/MSVC420/archive/df2c13aad74c094988c6c7e784234c2e778a0e91.zip
     bin_dir: MSVC420-*/bin
     include_dir: MSVC420-*/include
+
+# DREAMCAST
+  - id: shc-v5.1r11
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r11.tar.gz
