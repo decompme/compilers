@@ -218,6 +218,10 @@ compilers:
     platform: ps2
     template: common/default
     file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445479797395506/ee-gcc2.9-991111a.tar.xz
+  - id: ee-gcc2.9-991111b/r4
+    platform: ps2
+    template: common/default
+    file: https://github.com/TheOnlyZac/decomp.me/releases/download/ee-gcc2.9-991111/ee-gcc29-991111b-r4.tar.xz
   - id: ee-gcc2.9-991111-01
     platform: ps2
     template: common/default
