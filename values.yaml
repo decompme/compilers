@@ -221,7 +221,7 @@ compilers:
   - id: ee-gcc2.9-991111b-r4
     platform: ps2
     template: common/default
-    file: https://github.com/TheOnlyZac/decomp.me/releases/download/ee-gcc2.9-991111/ee-gcc29-991111b-r4.tar.xz
+    file: https://github.com/TheOnlyZac/compilers/releases/download/ee-gcc2.9-991111b%2Fr4/ee-gcc2.9-991111.tar.gz
   - id: ee-gcc2.9-991111-01
     platform: ps2
     template: common/default
