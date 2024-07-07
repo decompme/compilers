@@ -1,5 +1,5 @@
 vars:
-  - &wii_gc_compilers https://files.decomp.dev/compilers_20240702.zip
+  - &wii_gc_compilers https://files.decomp.dev/compilers_20240706.zip
   - &nds_mwcc https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
   - &3ds_armcc https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
 
@@ -684,6 +684,11 @@ compilers:
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
     package_dir: GC/1.2.5n
+  - id: mwcc_242_53
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: *wii_gc_compilers
+    package_dir: GC/1.3
   - id: mwcc_242_81
     platform: gc_wii
     template: gc_wii/mwcceppc
