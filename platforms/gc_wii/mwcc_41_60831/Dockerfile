@@ -7,8 +7,8 @@ FROM alpine:3.18 as base
 
 WORKDIR /root
 
-RUN wget -O compilers_20240702.zip "https://files.decomp.dev/compilers_20240702.zip"
-RUN unzip compilers_20240702.zip
+RUN wget -O compilers_20240706.zip "https://files.decomp.dev/compilers_20240706.zip"
+RUN unzip compilers_20240706.zip
 
 RUN mkdir -p /compilers/gc_wii/mwcc_41_60831
 
