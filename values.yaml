@@ -1,7 +1,7 @@
 vars:
   - &wii_gc_compilers https://files.decomp.dev/compilers_20240706.zip
-  - &nds_mwcc https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip
-  - &3ds_armcc https://cdn.discordapp.com/attachments/710646040792924172/1148006502980927528/armcc.zip
+  - &nds_mwcc https://github.com/decompme/compilers/releases/download/compilers/mwccarm.zip
+  - &3ds_armcc https://github.com/decompme/compilers/releases/download/compilers/armcc.zip
 
 compilers:
 # N64
@@ -209,15 +209,15 @@ compilers:
   - id: ee-gcc2.9-990721
     platform: ps2
     template: common/default
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1067306679806464060/ee-gcc2.9-990721.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-990721.tar.xz
   - id: ee-gcc2.9-991111
     platform: ps2
     template: common/default
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445542279954482/ee-gcc2.9-991111.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111.tar.xz
   - id: ee-gcc2.9-991111a
     platform: ps2
     template: common/default
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445479797395506/ee-gcc2.9-991111a.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111a.tar.xz
   - id: ee-gcc2.9-991111b-r4
     platform: ps2
     template: common/default
@@ -225,40 +225,40 @@ compilers:
   - id: ee-gcc2.9-991111-01
     platform: ps2
     template: common/default
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1119832299400331314/ee-gcc2.9-991111-01.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111-01.tar.xz
   - id: ee-gcc2.96
     platform: ps2
     template: common/default
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1067306680179752990/ee-gcc2.96.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.96.tar.xz
   - id: ee-gcc3.2-040921
     platform: ps2
     template: common/default
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1067306680548855908/ee-gcc3.2-040921.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc3.2-040921.tar.xz
 
   - id: ee-gcc2.95.2-273a
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: ee-gcc2.95.2-274
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: ee-gcc2.95.3-107
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: ee-gcc2.95.3-114
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: ee-gcc2.95.3-136
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: mwcps2-2.3-991202
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: mwcps2-2.3.3-000906
     platform: ps2
     template: common/default
@@ -282,7 +282,7 @@ compilers:
   - id: mwcps2-3.0b22-020926
     platform: ps2
     template: common/xz
-    file: https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: mwcps2-3.0b38-030307
     platform: ps2
     template: common/default

@@ -5,7 +5,7 @@ FROM alpine:3.18 as base
 
 RUN mkdir -p /compilers/ps2/ee-gcc2.9-991111a
 
-RUN wget -O ee-gcc2.9-991111a.tar.xz "https://cdn.discordapp.com/attachments/1067192766918037536/1120445479797395506/ee-gcc2.9-991111a.tar.xz"
+RUN wget -O ee-gcc2.9-991111a.tar.xz "https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111a.tar.xz"
 RUN tar xvJf ee-gcc2.9-991111a.tar.xz -C /compilers/ps2/ee-gcc2.9-991111a
 
 RUN chown -R root:root /compilers/ps2/ee-gcc2.9-991111a/

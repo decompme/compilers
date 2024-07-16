@@ -7,7 +7,7 @@ FROM alpine:3.18 as base
 
 WORKDIR /root
 
-RUN wget -O ps2_compilers.tar.xz "https://cdn.discordapp.com/attachments/1067192766918037536/1120445708516995118/ps2_compilers.tar.xz"
+RUN wget -O ps2_compilers.tar.xz "https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz"
 RUN tar xvJf ps2_compilers.tar.xz
 
 RUN mkdir -p /compilers/ps2/mwcps2-3.0b22-020926
