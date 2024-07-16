@@ -5,7 +5,7 @@ FROM alpine:3.18 as base
 
 # download zip first to allow for Docker caching
 
-RUN wget -O mwccarm.zip "https://cdn.discordapp.com/attachments/698589325620936736/845499146982129684/mwccarm.zip"
+RUN wget -O mwccarm.zip "https://github.com/decompme/compilers/releases/download/compilers/mwccarm.zip"
 RUN unzip mwccarm.zip
 
 RUN mkdir -p /compilers/nds_arm9/mwcc_40_1018
