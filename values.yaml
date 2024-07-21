@@ -107,6 +107,11 @@ compilers:
     file: https://github.com/devwizard64/gcc4.4.0-mips64-elf/releases/download/latest/gcc4.4.0-mips64-elf.tar.gz
 
 # PS1
+  - id: psyq_263_221
+    platform: ps1
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/psyq_263_221.tar.gz
+
   - id: psyq3.3
     platform: ps1
     template: ps1/psyq
