@@ -8,7 +8,7 @@ RUN mkdir -p /compilers/ps1/gcc2.8.0-mipsel
 RUN wget -O gcc-2.8.0.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.8.0.tar.gz"
 RUN tar xvzf gcc-2.8.0.tar.gz -C /compilers/ps1/gcc2.8.0-mipsel
 
-ARG MASPSX_HASH=854d93883a4cdc72eacbf33b455a55e249ec36a3
+ARG MASPSX_HASH=f371bae6f6b799ab16a5db14f29bd0e339f20eb6
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
