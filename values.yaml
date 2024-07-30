@@ -904,6 +904,12 @@ compilers:
     file: https://github.com/itsmattkc/MSVC420/archive/df2c13aad74c094988c6c7e784234c2e778a0e91.zip
     bin_dir: MSVC420-*/bin
     include_dir: MSVC420-*/include
+  - id: msvc8.0
+    platform: win32
+    template: win32/msvc
+    file: https://github.com/widberg/msvc8.0/archive/d6c4aa208c8345c78a9f68ba6ef911ee94c6a6e1.zip
+    bin_dir: msvc8.0-*/bin
+    include_dir: msvc8.0-*/include
 
 # DREAMCAST
   - id: shc-v5.1r11
