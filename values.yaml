@@ -909,7 +909,9 @@ compilers:
     template: win32/msvc
     file: https://github.com/widberg/msvc8.0/archive/d6c4aa208c8345c78a9f68ba6ef911ee94c6a6e1.zip
     bin_dir: msvc8.0-*/bin
-    include_dir: msvc8.0-*/include
+    include_dirs:
+      - msvc8.0-*/include
+      - msvc8.0-*/PlatformSDK/Include
 
 # DREAMCAST
   - id: shc-v5.1r11

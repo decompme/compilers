@@ -13,6 +13,7 @@ RUN mkdir -p /compilers/win32/msvc8.0/Include
 
 RUN cp -r msvc8.0-*/bin/*     /compilers/win32/msvc8.0/Bin
 RUN cp -r msvc8.0-*/include/* /compilers/win32/msvc8.0/Include
+RUN cp -r msvc8.0-*/PlatformSDK/Include/* /compilers/win32/msvc8.0/Include
 
 RUN chown -R root:root /compilers/win32/msvc8.0/
 RUN chmod +x /compilers/win32/msvc8.0/Bin/*
