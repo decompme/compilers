@@ -201,6 +201,10 @@ compilers:
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.8.1.tar.gz
+  - id: gcc2.8.1-psx
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.9/gcc-2.8.1-psx.tar.gz
   - id: gcc2.91.66-mipsel
     platform: ps1
     template: ps1/maspsx
