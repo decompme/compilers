@@ -188,7 +188,7 @@ compilers:
   - id: gcc2.7.2-psx
     platform: ps1
     template: ps1/maspsx
-    file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.7.2-psx.tar.gz
+    file: https://github.com/decompals/old-gcc/releases/download/0.13/gcc-2.7.2-psx.tar.gz
   - id: gcc2.7.2.1-mipsel
     platform: ps1
     template: ps1/maspsx
