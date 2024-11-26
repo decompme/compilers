@@ -922,6 +922,10 @@ compilers:
     file: https://github.com/itsmattkc/MSVC400/archive/821e942fd95bd16d01649401de7943ef87ae9f54.zip
     bin_dir: MSVC400-*/BIN
     include_dir: MSVC400-*/INCLUDE
+  - id: msvc4.1
+    platform: win32
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/msvc4.1.tar.gz
   - id: msvc4.2
     platform: win32
     template: win32/msvc
