@@ -101,6 +101,21 @@ compilers:
     template: common/default
     file: https://github.com/AngheloAlf/egcs_1.1.2-4/releases/download/latest/egcs_1.1.2-4.tar.gz
 
+  - id: egcs_1.1.2-4c
+    platform: n64
+    template: common/default
+    arch: linux
+    files:
+      - https://github.com/decompals/mips-binutils-egcs-2.9.5/releases/download/0.6/mips-binutils-egcs-2.9.5-linux.tar.gz
+      - https://github.com/decompals/mips-gcc-egcs-2.91.66/releases/download/0.7/mips-gcc-egcs-2.91.66-linux.tar.gz
+  - id: egcs_1.1.2-4c
+    platform: n64
+    template: common/default
+    arch: darwin
+    files:
+      - https://github.com/decompals/mips-binutils-egcs-2.9.5/releases/download/0.6/mips-binutils-egcs-2.9.5-macos.tar.gz
+      - https://github.com/decompals/mips-gcc-egcs-2.91.66/releases/download/0.7/mips-gcc-egcs-2.91.66-macos.tar.gz
+
   - id: gcc4.4.0-mips64-elf
     platform: n64
     template: common/default
