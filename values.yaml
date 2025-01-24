@@ -63,12 +63,12 @@ compilers:
     platform: n64
     template: common/default
     arch: linux
-    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-5.3-recomp-ubuntu-20.04.tar.gz
+    file: https://github.com/decompals/ido-static-recomp/releases/download/v1.2/ido-5.3-recomp-linux.tar.gz
   - id: ido5.3
     platform: n64
     template: common/default
     arch: darwin
-    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-5.3-recomp-macos-latest.tar.gz
+    file: https://github.com/decompals/ido-static-recomp/releases/download/v1.2/ido-5.3-recomp-macos.tar.gz
 
   - id: ido5.3_c++
     platform: n64
@@ -84,12 +84,12 @@ compilers:
     platform: n64
     template: common/default
     arch: linux
-    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-7.1-recomp-ubuntu-20.04.tar.gz
+    file: https://github.com/decompals/ido-static-recomp/releases/download/v1.2/ido-7.1-recomp-linux.tar.gz
   - id: ido7.1
     platform: n64
     template: common/default
     arch: darwin
-    file: https://github.com/ethteck/ido-static-recomp/releases/download/v0.6/ido-7.1-recomp-macos-latest.tar.gz
+    file: https://github.com/decompals/ido-static-recomp/releases/download/v1.2/ido-7.1-recomp-macos.tar.gz
 
   - id: mips_pro_744
     platform: n64
