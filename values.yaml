@@ -882,6 +882,10 @@ compilers:
     platform: msdos
     template: common/default
     file: https://github.com/OmniBlade/decomp.me/releases/download/wcc10.5/wcc11.0.tar.gz
+  - id: bcc3.1
+    platform: msdos
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/bcc3.1.tar.gz
 
 # WIN32
   - id: msvc6.0
