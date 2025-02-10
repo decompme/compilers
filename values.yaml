@@ -250,6 +250,14 @@ compilers:
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.95.2-psx.tar.gz
 
 # PS2
+  - id: iop-gcc2.8.1
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/iop-gcc2.8.1.tar.gz
+  - id: iop-gcc2.95.2-102
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/iop-gcc2.95.2-102.tar.gz
   - id: ee-gcc2.9-990721
     platform: ps2
     template: common/default
@@ -274,6 +282,14 @@ compilers:
     platform: ps2
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.96.tar.xz
+  - id: ee-gcc3.2-030210-beta2
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc3.2-030210-beta2.tar.gz
+  - id: ee-gcc3.2-030926
+    platform: ps2
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc3.2-030926.tar.gz
   - id: ee-gcc3.2-040921
     platform: ps2
     template: common/default
