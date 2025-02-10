@@ -285,7 +285,7 @@ compilers:
   - id: ee-gcc3.2-030210-beta2
     platform: ps2
     template: common/default
-    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc3.2-030210-beta2.tar.gz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc3.2-030210-beta2.tar.gz?2025-02-10
   - id: ee-gcc3.2-030926
     platform: ps2
     template: common/default
