@@ -872,10 +872,18 @@ compilers:
     platform: gc_wii
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/prodg_35.tar.gz
+  - id: prodg_35_b140
+    platform: gc_wii
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_35_b140.tar.gz
   - id: prodg_37
     platform: gc_wii
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/prodg_37.tar.gz
+  - id: prodg_381
+    platform: gc_wii
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_381.tar.gz
   - id: prodg_393
     platform: gc_wii
     template: common/default
