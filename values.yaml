@@ -879,7 +879,7 @@ compilers:
   - id: prodg_393
     platform: gc_wii
     template: common/default
-    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_393.tar.gz
+    file: https://github.com/decompme/compilers/releases/download/compilers/prodg_393.tar.gz?2025-02-13
 
 # DOS
   - id: wcc10.5
