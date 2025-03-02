@@ -983,6 +983,14 @@ compilers:
     include_dirs:
       - msvc8.0-*/include
       - msvc8.0-*/PlatformSDK/Include
+  - id: msvc8.0p
+    platform: win32
+    template: win32/msvc
+    file: https://github.com/widberg/msvc8.0/archive/52c8293f8b8d6441c594cf096542290c17a4d70e.zip
+    bin_dir: msvc8.0-*/bin
+    include_dirs:
+      - msvc8.0-*/include
+      - msvc8.0-*/PlatformSDK/Include
 
 # DREAMCAST
   - id: shc-v5.1r11
