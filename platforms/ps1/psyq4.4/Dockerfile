@@ -8,7 +8,7 @@ RUN mkdir -p /compilers/ps1/psyq4.4
 RUN wget -O psyq4.4.tar.gz "https://github.com/mkst/esa/releases/download/psyq-binaries/psyq4.4.tar.gz"
 RUN tar xvzf psyq4.4.tar.gz --strip-components=1 -C /compilers/ps1/psyq4.4
 
-RUN wget -O psyq-obj-parser.tar.gz https://github.com/mkst/pcsx-redux/releases/download/loosen-hi-lo-restrictions/psyq-obj-parser.tar.gz
+RUN wget -O psyq-obj-parser.tar.gz https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz?2025-03-18
 RUN tar xvzf psyq-obj-parser.tar.gz -C /compilers/ps1/psyq4.4/
 
 RUN chown -R root:root /compilers/ps1/psyq4.4/
