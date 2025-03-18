@@ -23,7 +23,9 @@ compilers:
   - id: gcc2.7.2sn0001
     platform: n64
     template: common/default
-    file: https://github.com/decompme/compilers/releases/download/compilers/n64_sn272_0001.tar.gz
+    files:
+      - https://github.com/decompme/compilers/releases/download/compilers/n64_sn272_0001.tar.gz
+      - https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz
 
   - id: gcc2.7.2sn0004
     platform: n64
@@ -31,12 +33,14 @@ compilers:
     files:
       - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/asn64.exe
       - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/cc1n64.exe
-      - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/psyq-obj-parser
+      - https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz
 
   - id: gcc2.7.2sn0006
     platform: n64
     template: common/default
-    file: https://github.com/decompme/compilers/releases/download/compilers/n64_sn272_0006.tar.gz
+    files:
+      - https://github.com/decompme/compilers/releases/download/compilers/n64_sn272_0006.tar.gz
+      - https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz
 
   - id: gcc2.7.2snew
     platform: n64
@@ -67,7 +71,7 @@ compilers:
       - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/asn64.exe
       - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/cc1n64.exe
       - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/cc1pln64.exe
-      - https://github.com/Mr-Wiseguy/pcsx-redux/releases/download/n64/psyq-obj-parser
+      - https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz
 
   - id: ido5.3
     platform: n64
