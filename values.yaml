@@ -513,6 +513,10 @@ compilers:
     platform: gba
     template: common/default
     file: https://github.com/notyourav/agbcc/releases/download/cp/agbcc.tar.gz
+  - id: gcc2.9-arm-000512
+    platform: gba
+    template: common/default
+    file: https://github.com/aplerdal/arm000512/releases/download/Release/gcc2.9-arm-000512.tar.xz
 
 # SATURN
   - id: cygnus-2.7-96Q3
