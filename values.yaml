@@ -295,7 +295,7 @@ compilers:
   - id: ee-gcc2.9-991111-01-dtls13010
     platform: ps2
     template: common/default
-    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111-01-dtls13010.tar.gz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111-01-dtls13010.tar.gz?2025-04-10
   - id: ee-gcc2.96
     platform: ps2
     template: common/default

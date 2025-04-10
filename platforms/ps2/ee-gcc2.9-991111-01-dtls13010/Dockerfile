@@ -5,7 +5,7 @@ FROM alpine:3.18 as base
 
 RUN mkdir -p /compilers/ps2/ee-gcc2.9-991111-01-dtls13010
 
-RUN wget -O ee-gcc2.9-991111-01-dtls13010.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111-01-dtls13010.tar.gz"
+RUN wget -O ee-gcc2.9-991111-01-dtls13010.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.9-991111-01-dtls13010.tar.gz?2025-04-10"
 RUN tar xvzf ee-gcc2.9-991111-01-dtls13010.tar.gz -C /compilers/ps2/ee-gcc2.9-991111-01-dtls13010
 
 RUN chown -R root:root /compilers/ps2/ee-gcc2.9-991111-01-dtls13010/
