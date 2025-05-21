@@ -1,3 +1,11 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "jinja2",
+#     "pyyaml",
+# ]
+# ///
 import argparse
 from pathlib import Path
 
@@ -10,7 +18,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "filename",
-        type=argparse.FileType("r"),
+        type=Path,
+        nargs="?",
+        default=Path("values.yaml"),
         help="Configuration file, e.g. `values.yaml`",
     )
     parser.add_argument(
@@ -33,7 +43,8 @@ def main():
         loader=FileSystemLoader(args.template_dir), autoescape=select_autoescape()
     )
 
-    values = yaml.safe_load(args.filename)
+    with args.filename.open("r") as f:
+        values = yaml.safe_load(f)
     for compiler in values.get("compilers", []):
         if "arch" in compiler:
             target_path = (
