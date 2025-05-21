@@ -14,8 +14,14 @@ The values that are used to populate the templates are found in values.yaml.
 Rather than modifying the Dockerfiles directly, the `.j2` template should be changed and the Dockerfiles regenerated.
 
 ```sh
+uv run template.py
+```
+
+Or, if you don't have `uv` installed:
+
+```sh
 python3 -m pip install Jinja2 pyyaml
-python3 template.py values.yaml
+python3 template.py
 ```
 
 ## Notes:
