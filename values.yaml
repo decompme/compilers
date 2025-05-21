@@ -887,7 +887,8 @@ compilers:
   - id: mwcc_233_163e
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: *wii_gc_compilers
+    # Version was removed from later archives
+    file: https://files.decomp.dev/compilers_20240706.zip
     package_dir: GC/1.2.5e
     frank_mwcceppc: GC/1.2.5
 
