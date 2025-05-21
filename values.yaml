@@ -1,5 +1,5 @@
 vars:
-  - &wii_gc_compilers https://files.decomp.dev/compilers_20240706.zip
+  - &wii_gc_compilers https://files.decomp.dev/compilers_20250520.zip
   - &nds_mwcc https://github.com/decompme/compilers/releases/download/compilers/mwccarm.zip
   - &3ds_armcc https://github.com/decompme/compilers/releases/download/compilers/armcc.zip
 
@@ -752,6 +752,11 @@ compilers:
     template: gc_wii/mwcceppc
     file: *wii_gc_compilers
     package_dir: GC/1.1
+  - id: mwcc_233_159p1
+    platform: gc_wii
+    template: gc_wii/mwcceppc
+    file: *wii_gc_compilers
+    package_dir: GC/1.1p1
   - id: mwcc_233_163
     platform: gc_wii
     template: gc_wii/mwcceppc
@@ -882,7 +887,8 @@ compilers:
   - id: mwcc_233_163e
     platform: gc_wii
     template: gc_wii/mwcceppc
-    file: *wii_gc_compilers
+    # Version was removed from later archives
+    file: https://files.decomp.dev/compilers_20240706.zip
     package_dir: GC/1.2.5e
     frank_mwcceppc: GC/1.2.5
 
