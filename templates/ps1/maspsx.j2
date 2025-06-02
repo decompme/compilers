@@ -1,4 +1,4 @@
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/{{ platform }}/{{ id }}
 
@@ -7,7 +7,7 @@ RUN mkdir -p /compilers/{{ platform }}/{{ id }}
 RUN wget -O {{ filename }} "{{ file }}"
 RUN tar xvzf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
 
-ARG MASPSX_HASH=5ef10c940ca275104d3266f5b8ccf04bb97b4958
+ARG MASPSX_HASH=9e4733d051c4d22a6848358e269017efabed9c8b
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
@@ -21,6 +21,6 @@ RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
 RUN chmod +x /compilers/{{ platform }}/{{ id }}/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

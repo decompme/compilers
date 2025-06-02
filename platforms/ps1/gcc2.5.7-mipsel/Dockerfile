@@ -1,14 +1,14 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/ps1/gcc2.5.7-mipsel
 
 RUN wget -O gcc-2.5.7.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.5.7.tar.gz"
 RUN tar xvzf gcc-2.5.7.tar.gz -C /compilers/ps1/gcc2.5.7-mipsel
 
-ARG MASPSX_HASH=5ef10c940ca275104d3266f5b8ccf04bb97b4958
+ARG MASPSX_HASH=9e4733d051c4d22a6848358e269017efabed9c8b
 
 RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
 RUN unzip maspsx.zip
@@ -22,6 +22,6 @@ RUN chown -R root:root /compilers/ps1/gcc2.5.7-mipsel/
 RUN chmod +x /compilers/ps1/gcc2.5.7-mipsel/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers
