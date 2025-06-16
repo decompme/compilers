@@ -482,6 +482,11 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/psp-gcc-1.3.1.tar.gz?2024-04-25
 
+  - id: psp-gcc-1.7.1
+    platform: psp
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/psp-gcc-1.7.1.tar.gz
+
 # MAXOSX
   - id: gcc-5370
     platform: macosx
