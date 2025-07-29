@@ -25,7 +25,7 @@ RUN wget -O musl.zip https://github.com/open-ead/botw-lib-musl/archive/${MUSL_HA
 RUN unzip musl.zip
 RUN cp -r botw-lib-musl-${MUSL_HASH} /compilers/switch/clang-4.0.1/
 
-RUN apk add --no-cache patch
+RUN apk add patch
 
 ARG PATCH_REPO=https://github.com/GRAnimated/switch-clang-patches
 ARG PATCH_BRANCH=main
