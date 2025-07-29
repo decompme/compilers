@@ -30,7 +30,9 @@ RUN apk add --no-cache patch
 ARG PATCH_REPO=https://github.com/GRAnimated/switch-clang-patches
 ARG PATCH_BRANCH=main
 
-RUN git clone --branch ${PATCH_BRANCH} ${PATCH_REPO} /tmp/patches
+RUN wget -O patches.zip "${PATCH_REPO}/archive/refs/heads/${PATCH_BRANCH}.zip"
+RUN unzip patches.zip -d /tmp
+RUN mv /tmp/switch-clang-patches-${PATCH_BRANCH} /tmp/patches
 
 # apply patches to clang
 WORKDIR /compilers/switch/clang-3.9.1
@@ -41,8 +43,6 @@ RUN patch_dir="/tmp/patches/clang-3.9.1/include/c++/v1" && \
             patch -p1 < "$patch"; \
         done; \
     fi
-
-RUN rm -rf /tmp/patches
 
 RUN chown -R root:root /compilers/switch/clang-3.9.1/
 
