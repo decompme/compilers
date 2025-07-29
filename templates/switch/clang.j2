@@ -24,6 +24,25 @@ RUN wget -O musl.zip https://github.com/open-ead/botw-lib-musl/archive/${MUSL_HA
 RUN unzip musl.zip
 RUN cp -r botw-lib-musl-${MUSL_HASH} /compilers/{{ platform }}/{{ id }}/
 
+RUN apk add --no-cache patch
+
+ARG PATCH_REPO=https://github.com/GRAnimated/switch-clang-patches
+ARG PATCH_BRANCH=main
+
+RUN git clone --branch ${PATCH_BRANCH} ${PATCH_REPO} /tmp/patches
+
+# apply patches to clang
+WORKDIR /compilers/{{ platform }}/{{ id }}
+RUN patch_dir="/tmp/patches/{{ id }}/include/c++/v1" && \
+    if [ -d "$patch_dir" ]; then \
+        find "$patch_dir" -type f -name '*.diff' -print0 | while IFS= read -r -d '' patch; do \
+            echo "Applying patch: $patch"; \
+            patch -p1 < "$patch"; \
+        done; \
+    fi
+
+RUN rm -rf /tmp/patches
+
 RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
 
 
