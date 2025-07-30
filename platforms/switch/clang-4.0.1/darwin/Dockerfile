@@ -35,14 +35,11 @@ RUN unzip patches.zip -d /tmp
 RUN mv /tmp/switch-clang-patches-${PATCH_BRANCH} /tmp/patches
 
 # apply patches to clang
-WORKDIR /compilers/switch/clang-4.0.1
-RUN patch_dir="/tmp/patches/clang-4.0.1/include/c++/v1" && \
-    if [ -d "$patch_dir" ]; then \
-        find "$patch_dir" -type f -name '*.diff' -print0 | while IFS= read -r -d '' patch; do \
-            echo "Applying patch: $patch"; \
-            patch -p1 < "$patch"; \
-        done; \
-    fi
+RUN patch_dir="/tmp/patches/clang-4.0.1" && \
+    find "$patch_dir" -type f -name '*.diff' -print0 | while IFS= read -r -d '' patch; do \
+        echo "Applying patch: $patch"; \
+        patch -d "/compilers/switch/clang-4.0.1" -p0 < "$patch"; \
+    done;
 
 RUN chown -R root:root /compilers/switch/clang-4.0.1/
 
