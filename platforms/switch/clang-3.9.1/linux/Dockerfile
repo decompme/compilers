@@ -25,6 +25,22 @@ RUN wget -O musl.zip https://github.com/open-ead/botw-lib-musl/archive/${MUSL_HA
 RUN unzip musl.zip
 RUN cp -r botw-lib-musl-${MUSL_HASH} /compilers/switch/clang-3.9.1/
 
+RUN apk add patch
+
+ARG PATCH_REPO=https://github.com/GRAnimated/switch-clang-patches
+ARG PATCH_BRANCH=main
+
+RUN wget -O patches.zip "${PATCH_REPO}/archive/refs/heads/${PATCH_BRANCH}.zip"
+RUN unzip patches.zip -d /tmp
+RUN mv /tmp/switch-clang-patches-${PATCH_BRANCH} /tmp/patches
+
+# apply patches to clang
+RUN patch_dir="/tmp/patches/clang-3.9.1" && \
+    find "$patch_dir" -type f -name '*.diff' -print0 | while IFS= read -r -d '' patch; do \
+        echo "Applying patch: $patch"; \
+        patch -d "/compilers/switch/clang-3.9.1" -p0 < "$patch"; \
+    done;
+
 RUN chown -R root:root /compilers/switch/clang-3.9.1/
 
 
