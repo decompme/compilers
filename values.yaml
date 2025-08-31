@@ -182,86 +182,107 @@ compilers:
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.5.7.tar.gz
+    maspsx_hash: &maspsx_hash b0f897d1267bd78530a1501320ca989e7bc2483e
   - id: gcc2.5.7-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.5.7-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.6.0-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.6.0.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.6.0-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.6.0-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.6.3-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.6.3.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.6.3-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.6.3-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.0-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.0.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.1-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.1.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.2-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.2.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.2-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.13/gcc-2.7.2-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.2.1-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.2.1.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.2.2-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.2.2.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.2.3-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.2.3.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.8.0-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.8.0.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.8.0-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.8.0-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.8.1-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.8.1.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.8.1-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.8.1-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.91.66-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.91.66.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.91.66-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.91.66-psx.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.95.2-mipsel
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.95.2.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.95.2-psx
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.95.2-psx.tar.gz
+    maspsx_hash: *maspsx_hash
 
 # PS2
   - id: iop-gcc2.8.1
