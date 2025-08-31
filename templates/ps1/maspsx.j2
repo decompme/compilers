@@ -7,11 +7,9 @@ RUN mkdir -p /compilers/{{ platform }}/{{ id }}
 RUN wget -O {{ filename }} "{{ file }}"
 RUN tar xvzf {{ filename }} -C /compilers/{{ platform }}/{{ id }}
 
-ARG MASPSX_HASH=9e4733d051c4d22a6848358e269017efabed9c8b
-
-RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/${MASPSX_HASH}.zip
+RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/{{ maspsx_hash }}.zip
 RUN unzip maspsx.zip
-RUN cp -r maspsx-${MASPSX_HASH} /compilers/{{ platform }}/{{ id }}/maspsx
+RUN cp -r maspsx-{{ maspsx_hash }} /compilers/{{ platform }}/{{ id }}/maspsx
 
 RUN echo '#!/bin/bash' >> as
 RUN echo 'python3 $(dirname -- $0)/maspsx/maspsx.py --run-assembler -I${COMPILER_DIR} $@' >> as
