@@ -72,6 +72,7 @@ compilers:
       - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/cc1n64.exe
       - https://github.com/marijnvdwerf/sn64/releases/download/1%2C0%2C0%2C2/cc1pln64.exe
       - https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz
+      - https://github.com/RocketRet/modern-asn64/releases/download/main-release/modern-asn64.py
 
   - id: ido5.3
     platform: n64
