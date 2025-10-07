@@ -1048,6 +1048,34 @@ compilers:
       - msvc8.0-*/PlatformSDK/Include
 
 # DREAMCAST
+  - id: shc-v5.0r10
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.0r10.tar.gz
+  - id: shc-v5.0r26
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.0r26.tar.gz
+  - id: shc-v5.0r28
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.0r28.tar.gz
+  - id: shc-v5.0r31
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.0r31.tar.gz
+  - id: shc-v5.0r32
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.0r32.tar.gz
+  - id: shc-v5.1r01
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r01.tar.gz
+  - id: shc-v5.1r08
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r08.tar.gz
   - id: shc-v5.1r11
     platform: dreamcast
     template: common/default
