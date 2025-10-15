@@ -1072,6 +1072,14 @@ compilers:
     platform: dreamcast
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r01.tar.gz
+  - id: shc-v5.1r03
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r03.tar.gz
+  - id: shc-v5.1r04
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r04.tar.gz
   - id: shc-v5.1r08
     platform: dreamcast
     template: common/default
@@ -1080,3 +1088,7 @@ compilers:
     platform: dreamcast
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r11.tar.gz
+  - id: shc-v5.1r13
+    platform: dreamcast
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r13.tar.gz
