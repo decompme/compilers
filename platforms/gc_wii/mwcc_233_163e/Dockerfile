@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 # Copy of common/decomp.dev with legacy support for frank.py
 
