@@ -1,17 +1,15 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
-RUN mkdir -p /compilers/gc_wii/prodg_35
+RUN apk add --no-cache curl libarchive-tools
 
-RUN wget -O prodg_35.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/prodg_35.tar.gz"
-RUN tar xvzf prodg_35.tar.gz -C /compilers/gc_wii/prodg_35
-
-RUN chown -R root:root /compilers/gc_wii/prodg_35/
-RUN chmod +x /compilers/gc_wii/prodg_35/*
+RUN mkdir compilers \
+    && curl -L "https://files.decomp.dev/compilers_20251015.zip" \
+    | bsdtar -xvf- -C /compilers
 
 
-FROM scratch as release
+FROM scratch AS release
 
-COPY --from=base /compilers /compilers
+COPY --from=base /compilers/ProDG/3.5 /compilers/gc_wii/prodg_35

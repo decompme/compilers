@@ -1,0 +1,12 @@
+FROM alpine:3.18 AS base
+
+RUN apk add --no-cache curl libarchive-tools
+
+RUN mkdir compilers \
+    && curl -L "{{ file }}" \
+    | bsdtar -xvf- -C /compilers
+
+
+FROM scratch AS release
+
+COPY --from=base /compilers/{{ package_dir }} /compilers/{{ platform }}/{{ id }}

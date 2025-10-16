@@ -12,4 +12,4 @@ RUN mkdir compilers \
 
 FROM scratch AS release
 
-COPY --from=base /compilers/GC/2.6 /compilers/gc_wii/mwcc_247_107
+COPY --from=base /compilers/X360/16.00.11886.00 /compilers/xbox360/msvc_ppc_16.00.11886.00
