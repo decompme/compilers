@@ -4,7 +4,13 @@ vars:
   - &3ds_armcc https://github.com/decompme/compilers/releases/download/compilers/armcc.zip
 
 compilers:
-# N64
+  # Common
+  - id: wibo_dlls
+    platform: common
+    template: common/default
+    file: https://files.decomp.dev/msvcrt_20251015.zip
+
+  # N64
   - id: gcc2.7.2kmc
     platform: n64
     template: common/default
@@ -136,7 +142,7 @@ compilers:
     template: common/default
     file: https://github.com/devwizard64/gcc4.4.0-mips64-elf/releases/download/latest/gcc4.4.0-mips64-elf.tar.gz
 
-# PS1
+  # PS1
   - id: psyq_263_221
     platform: ps1
     template: common/default
@@ -285,7 +291,7 @@ compilers:
     file: https://github.com/decompals/old-gcc/releases/download/0.12/gcc-2.95.2-psx.tar.gz
     maspsx_hash: *maspsx_hash
 
-# PS2
+  # PS2
   - id: iop-gcc2.8.1
     platform: ps2
     template: common/default
@@ -448,7 +454,7 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/mwcps2-3.0.1b210-060308.tar.gz
 
-# PSP
+  # PSP
   - id: mwccpsp_3.0.1_121
     platform: psp
     template: common/default
@@ -509,7 +515,7 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/psp-gcc-1.7.1.tar.gz
 
-# MAXOSX
+  # MAXOSX
   - id: gcc-5370
     platform: macosx
     template: common/default
@@ -535,7 +541,7 @@ compilers:
       - https://github.com/ChrisNonyminus/powerpc-darwin-cross/releases/download/initial/gcc3-1041.tar.gz
       - https://gist.githubusercontent.com/ChrisNonyminus/ec53837b151a65e4233fa53604de4549/raw/d7c6fc639310b938fa519e68a8f8d4909acba2ad/convert_gas_syntax.py
 
-# GBA
+  # GBA
   - id: agbcc
     platform: gba
     template: common/default
@@ -545,14 +551,14 @@ compilers:
     template: common/default
     file: https://github.com/notyourav/agbcc/releases/download/cp/agbcc.tar.gz
 
-# SATURN
+  # SATURN
   - id: cygnus-2.7-96Q3
     platform: saturn
     template: common/zip
     package_dir: saturn-compilers-*/cygnus-2.7-96Q3-bin
     file: https://github.com/sozud/saturn-compilers/archive/af27f4aa6566c1b0fa5332b488e63d6ffd28bd48.zip
 
-# SWITCH
+  # SWITCH
   - id: clang-3.9.1
     arch: linux
     platform: switch
@@ -590,7 +596,7 @@ compilers:
     file: https://releases.llvm.org/8.0.0/clang+llvm-8.0.0-x86_64-apple-darwin.tar.xz
     clang_binary: clang-8
 
-# NDS
+  # NDS
   - id: mwcc_20_72
     platform: nds_arm9
     file: *nds_mwcc
@@ -709,7 +715,7 @@ compilers:
     template: nds/mwccarm
     package_dir: mwccarm/dsi/1.6sp1
 
-# 3DS
+  # 3DS
   - id: armcc_40_771
     platform: n3ds
     template: common/zip
@@ -768,7 +774,7 @@ compilers:
     file: *3ds_armcc
     package_dir: 5.04/b82
 
-# WII & GCC
+  # WII & GCC
   - id: mwcc_233_144
     platform: gc_wii
     template: gc_wii/mwcceppc
@@ -940,7 +946,7 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/prodg_393.tar.gz?2025-02-13
 
-# DOS
+  # DOS
   - id: wcc10.5
     platform: msdos
     template: common/default
@@ -966,7 +972,7 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/bcc3.1.tar.gz
 
-# WIN32
+  # WIN32
   - id: msvc6.0
     platform: win32
     template: common/default
@@ -1047,7 +1053,7 @@ compilers:
       - msvc8.0-*/include
       - msvc8.0-*/PlatformSDK/Include
 
-# DREAMCAST
+  # DREAMCAST
   - id: shc-v5.0r10
     platform: dreamcast
     template: common/default
