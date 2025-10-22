@@ -1,31 +1,15 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
-# download zip first to allow for Docker caching
+RUN apk add --no-cache curl libarchive-tools
 
-WORKDIR /root
-
-RUN wget -O compilers_20250520.zip "https://files.decomp.dev/compilers_20250520.zip"
-RUN unzip compilers_20250520.zip
-
-RUN mkdir -p /compilers/gc_wii/mwcc_43_145
-
-RUN cp -r Wii/1.0/* /compilers/gc_wii/mwcc_43_145
-
-RUN chmod +x /compilers/gc_wii/mwcc_43_145/mwcceppc.exe
-RUN touch /compilers/gc_wii/mwcc_43_145/license.dat
-RUN if [[ -f /compilers/gc_wii/mwcc_43_145/lmgr326b.dll ]]; then \
-    mv /compilers/gc_wii/mwcc_43_145/lmgr326b.dll /compilers/gc_wii/mwcc_43_145/LMGR326B.dll; \
-  fi
-RUN if [[ -f /compilers/gc_wii/mwcc_43_145/lmgr8c.dll ]]; then \
-    mv /compilers/gc_wii/mwcc_43_145/lmgr8c.dll /compilers/gc_wii/mwcc_43_145/LMGR8C.dll; \
-  fi
-
-RUN chown -R root:root /compilers/gc_wii/mwcc_43_145/
+RUN mkdir compilers \
+    && curl -L "https://files.decomp.dev/compilers_20251015.zip" \
+    | bsdtar -xvf- -C /compilers
 
 
-FROM scratch as release
+FROM scratch AS release
 
-COPY --from=base /compilers /compilers
+COPY --from=base /compilers/Wii/1.0 /compilers/gc_wii/mwcc_43_145

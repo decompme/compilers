@@ -1,0 +1,20 @@
+FROM alpine:3.18 AS base
+
+# Copy of common/decomp.dev with legacy support for frank.py
+
+RUN apk add --no-cache curl libarchive-tools
+
+RUN mkdir compilers \
+    && curl -L "{{ file }}" \
+    | bsdtar -xvf- -C /compilers
+
+{% if frank_mwcceppc is defined %}
+ARG FRANK_HASH=d19668657d2a5efa42cdffb801090d05734b9dbd
+RUN wget -O /compilers/{{ package_dir }}/frank.py https://raw.githubusercontent.com/doldecomp/melee/${FRANK_HASH}/tools/frank.py
+RUN cp -r /compilers/{{ frank_mwcceppc }}/mwcceppc.exe /compilers/{{ package_dir }}/mwcceppc.125.exe
+{%- endif %}
+
+
+FROM scratch AS release
+
+COPY --from=base /compilers/{{ package_dir }} /compilers/{{ platform }}/{{ id }}
