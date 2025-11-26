@@ -343,8 +343,8 @@ compilers:
 
   - id: ee-gcc2.95.2-273a
     platform: ps2
-    template: common/xz
-    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.95.2-273a.tar.gz
   - id: ee-gcc2.95.2-274
     platform: ps2
     template: common/xz
@@ -355,12 +355,12 @@ compilers:
     file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
   - id: ee-gcc2.95.3-114
     platform: ps2
-    template: common/xz
-    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.95.3-114.tar.gz
   - id: ee-gcc2.95.3-136
     platform: ps2
-    template: common/xz
-    file: https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.95.3-136.tar.gz
   - id: mwcps2-2.3-991202
     platform: ps2
     template: common/xz

@@ -3,16 +3,10 @@
 
 FROM alpine:3.18 as base
 
-# download xz first to allow for Docker caching
-
-WORKDIR /root
-
-RUN wget -O ps2_compilers.tar.xz "https://github.com/decompme/compilers/releases/download/compilers/ps2_compilers.tar.xz"
-RUN tar xvJf ps2_compilers.tar.xz
-
 RUN mkdir -p /compilers/ps2/ee-gcc2.95.3-114
 
-RUN cp -r ee-gcc2.95.3-114/* /compilers/ps2/ee-gcc2.95.3-114
+RUN wget -O ee-gcc2.95.3-114.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/ee-gcc2.95.3-114.tar.gz"
+RUN tar xvzf ee-gcc2.95.3-114.tar.gz -C /compilers/ps2/ee-gcc2.95.3-114
 
 RUN chown -R root:root /compilers/ps2/ee-gcc2.95.3-114/
 RUN chmod +x /compilers/ps2/ee-gcc2.95.3-114/*
