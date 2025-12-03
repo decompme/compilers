@@ -977,6 +977,12 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/bcc3.1.tar.gz
 
+  # Wii U
+  - id: ghs5.3.22
+    platform: wiiu
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/ghs5.3.22.tar.gz
+
   # WIN32
   - id: msvc6.0
     platform: win32
