@@ -1121,3 +1121,9 @@ compilers:
     template: common/decomp.dev
     file: *decomp_dev
     package_dir: X360/16.00.11886.00
+
+  # Android x86
+  - id: ndk-r8e-gcc-4.7
+    platform: android_x86
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/android-ndk-r8e-linux-x86_64.tar.bz2
