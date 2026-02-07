@@ -1127,3 +1127,7 @@ compilers:
     platform: android_x86
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/android-ndk-r8e-linux-x86_64.tar.bz2
+  - id: ndk-r8e-gcc-4.4.3
+    platform: android_x86
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/android-ndk-r8e-linux-x86_64-gcc-4.4.3.tar.bz2
