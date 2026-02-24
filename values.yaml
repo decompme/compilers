@@ -726,6 +726,16 @@ compilers:
     template: common/zip
     file: *3ds_armcc
     package_dir: 4.0/b821
+  - id: armcc_40_865
+    platform: n3ds
+    template: common/zip
+    file: *3ds_armcc
+    package_dir: 4.0/b865
+  - id: armcc_40_902
+    platform: n3ds
+    template: common/zip
+    file: *3ds_armcc
+    package_dir: 4.0/b902
 
   - id: armcc_41_561
     platform: n3ds
@@ -742,6 +752,11 @@ compilers:
     template: common/zip
     file: *3ds_armcc
     package_dir: 4.1/b791
+  - id: armcc_41_844
+    platform: n3ds
+    template: common/zip
+    file: *3ds_armcc
+    package_dir: 4.1/b844
   - id: armcc_41_894
     platform: n3ds
     template: common/zip
