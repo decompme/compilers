@@ -2,6 +2,7 @@ vars:
   - &decomp_dev https://files.decomp.dev/compilers_20251015.zip
   - &nds_mwcc https://github.com/decompme/compilers/releases/download/compilers/mwccarm.zip
   - &3ds_armcc https://github.com/decompme/compilers/releases/download/compilers/armcc.zip
+  - &msvc9_0sp1_url https://github.com/RogueValleyInformationSecurity/compilers/releases/download/msvc9.0sp1-20260223/msvc9.0sp1-fulltree.tar.gz
 
 compilers:
   # Common
@@ -1078,6 +1079,10 @@ compilers:
     include_dirs:
       - msvc8.0-*/include
       - msvc8.0-*/PlatformSDK/Include
+  - id: msvc9.0sp1
+    platform: win32
+    template: common/default
+    file: *msvc9_0sp1_url
 
   # DREAMCAST
   - id: shc-v5.0r10
