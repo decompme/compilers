@@ -7,7 +7,7 @@ FROM alpine:3.18 as base
 
 WORKDIR /root
 
-RUN wget -O armcc.zip "https://github.com/decompme/compilers/releases/download/compilers/armcc.zip"
+RUN wget -O armcc.zip "https://github.com/decompme/compilers/releases/download/compilers/armcc.zip?2026-03-04"
 RUN unzip armcc.zip
 
 RUN mkdir -p /compilers/n3ds/armcc_40_902
