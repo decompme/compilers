@@ -225,6 +225,11 @@ compilers:
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.7.1.tar.gz
     maspsx_hash: *maspsx_hash
+  - id: gcc2.7.2-cdk
+    platform: ps1
+    template: ps1/maspsx
+    file: https://github.com/decompals/old-gcc/releases/download/0.14/gcc-2.7.2-cdk.tar.gz
+    maspsx_hash: *maspsx_hash
   - id: gcc2.7.2-mipsel
     platform: ps1
     template: ps1/maspsx
