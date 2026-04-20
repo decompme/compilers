@@ -189,7 +189,7 @@ compilers:
     platform: ps1
     template: ps1/maspsx
     file: https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.5.7.tar.gz
-    maspsx_hash: &maspsx_hash 3f4dd438f25de92745ec9fec991263639ce92821
+    maspsx_hash: &maspsx_hash 874855c53f65f8fa57447e1da6bde6236dbef9d5
   - id: gcc2.5.7-psx
     platform: ps1
     template: ps1/maspsx
