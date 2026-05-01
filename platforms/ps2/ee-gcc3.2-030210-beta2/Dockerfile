@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/ps2/ee-gcc3.2-030210-beta2
 
@@ -12,6 +12,6 @@ RUN chown -R root:root /compilers/ps2/ee-gcc3.2-030210-beta2/
 RUN chmod +x /compilers/ps2/ee-gcc3.2-030210-beta2/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

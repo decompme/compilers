@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 # download zip first to allow for Docker caching
 
@@ -19,6 +19,6 @@ RUN chown -R root:root /compilers/nds_arm9/mwcc_20_87/
 RUN chmod +x /compilers/nds_arm9/mwcc_20_87/mwccarm.exe
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

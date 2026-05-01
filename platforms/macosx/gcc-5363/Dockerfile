@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/macosx/gcc-5363
 
@@ -13,6 +13,6 @@ RUN chown -R root:root /compilers/macosx/gcc-5363/
 RUN chmod +x /compilers/macosx/gcc-5363/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

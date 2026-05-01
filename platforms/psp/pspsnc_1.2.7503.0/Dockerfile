@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/psp/pspsnc_1.2.7503.0
 
@@ -12,6 +12,6 @@ RUN chown -R root:root /compilers/psp/pspsnc_1.2.7503.0/
 RUN chmod +x /compilers/psp/pspsnc_1.2.7503.0/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

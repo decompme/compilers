@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/switch/clang-3.9.1
 
@@ -44,6 +44,6 @@ RUN patch_dir="/tmp/patches/clang-3.9.1" && \
 RUN chown -R root:root /compilers/switch/clang-3.9.1/
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers
