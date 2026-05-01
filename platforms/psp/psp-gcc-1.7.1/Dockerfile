@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/psp/psp-gcc-1.7.1
 
@@ -12,6 +12,6 @@ RUN chown -R root:root /compilers/psp/psp-gcc-1.7.1/
 RUN chmod +x /compilers/psp/psp-gcc-1.7.1/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

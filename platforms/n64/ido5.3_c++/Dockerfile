@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/n64/ido5.3_c++
 
@@ -12,6 +12,6 @@ RUN chown -R root:root /compilers/n64/ido5.3_c++/
 RUN chmod +x /compilers/n64/ido5.3_c++/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

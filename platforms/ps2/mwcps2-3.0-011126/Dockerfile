@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/ps2/mwcps2-3.0-011126
 
@@ -12,6 +12,6 @@ RUN chown -R root:root /compilers/ps2/mwcps2-3.0-011126/
 RUN chmod +x /compilers/ps2/mwcps2-3.0-011126/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

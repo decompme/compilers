@@ -1,4 +1,4 @@
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/{{ platform }}/{{ id }}
 {% for url in files | default([file]) | default([]) %}
@@ -28,6 +28,6 @@ RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
 RUN chmod +x /compilers/{{ platform }}/{{ id }}/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

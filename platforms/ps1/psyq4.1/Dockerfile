@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/ps1/psyq4.1
 
@@ -15,6 +15,6 @@ RUN chown -R root:root /compilers/ps1/psyq4.1/
 RUN chmod +x /compilers/ps1/psyq4.1/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers

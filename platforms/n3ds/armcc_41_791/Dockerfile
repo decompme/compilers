@@ -1,7 +1,7 @@
 # NOTE: This file is generated automatically via template.py. Do not edit manually!
 
 
-FROM alpine:3.18 as base
+FROM alpine:3.18 AS base
 
 # download zip first to allow for Docker caching
 
@@ -18,6 +18,6 @@ RUN chown -R root:root /compilers/n3ds/armcc_41_791/
 RUN chmod +x /compilers/n3ds/armcc_41_791/*
 
 
-FROM scratch as release
+FROM scratch AS release
 
 COPY --from=base /compilers /compilers
