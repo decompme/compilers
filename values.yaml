@@ -80,6 +80,11 @@ compilers:
       - https://github.com/decompme/compilers/releases/download/compilers/psyq-obj-parser.tar.gz
       - https://github.com/RocketRet/modern-asn64/releases/download/main-release/modern-asn64.py
 
+  - id: ido4.1
+    platform: n64
+    template: common/default
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/refs/heads/n/qemu/ido4.1.tar.xz
+
   - id: ido5.3
     platform: n64
     template: common/default
