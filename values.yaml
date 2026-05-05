@@ -83,7 +83,7 @@ compilers:
   - id: ido4.1
     platform: n64
     template: common/default
-    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/refs/heads/n/qemu/ido4.1.tar.xz
+    file: https://github.com/decompme/compilers/releases/download/compilers/ido4.1.tar.gz
 
   - id: ido5.3
     platform: n64
