@@ -5,8 +5,8 @@ FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/n64/ido4.1
 
-RUN wget -O ido4.1.tar.xz "https://github.com/LLONSIT/qemu-irix-helpers/raw/refs/heads/n/qemu/ido4.1.tar.xz"
-RUN tar xvJf ido4.1.tar.xz -C /compilers/n64/ido4.1
+RUN wget -O ido4.1.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/ido4.1.tar.gz"
+RUN tar xvzf ido4.1.tar.gz -C /compilers/n64/ido4.1
 
 RUN chown -R root:root /compilers/n64/ido4.1/
 RUN chmod +x /compilers/n64/ido4.1/*
