@@ -1001,6 +1001,10 @@ compilers:
     platform: msdos
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/bcc3.1.tar.gz
+  - id: msc5.1
+    platform: msdos
+    template: common/default
+    file: https://github.com/decompme/compilers/releases/download/compilers/msc-5.1.tar.gz
 
   # Wii U
   - id: ghs5.3.22
