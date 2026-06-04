@@ -3,7 +3,7 @@
 
 FROM alpine:3.18 AS base
 
-RUN mkdir -p /compilers/n64/ido4.1
+RUN mkdir -p /compilers/n64/ido5.2
 
 RUN wget -O ido5.2.tar.xz "https://github.com/LLONSIT/qemu-irix-helpers/raw/refs/heads/n/qemu/ido5.2.tar.xz"
 RUN tar xvJf ido5.2.tar.xz -C /compilers/n64/ido5.2
