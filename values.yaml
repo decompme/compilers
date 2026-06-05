@@ -85,6 +85,11 @@ compilers:
     template: common/default
     file: https://github.com/decompme/compilers/releases/download/compilers/ido4.1.tar.gz
 
+  - id: ido5.2
+    platform: n64
+    template: common/default
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/refs/heads/n/qemu/ido5.2.tar.xz
+
   - id: ido5.3
     platform: n64
     template: common/default
