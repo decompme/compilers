@@ -565,6 +565,10 @@ compilers:
     platform: gba
     template: common/default
     file: https://github.com/notyourav/agbcc/releases/download/cp/agbcc.tar.gz
+  - id: gcc2.96
+    platform: gba
+    template: common/default
+    file: https://github.com/SBird1337/camelot-gcc/releases/download/2.96/gcc-2.96-20000731-armelf.tar.gz
 
   # SATURN
   - id: cygnus-2.7-96Q3
