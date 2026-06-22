@@ -986,6 +986,10 @@ compilers:
     package_dir: ProDG/3.9.3
 
   # DOS
+  - id: wcc10.0a
+    platform: msdos
+    template: common/default
+    file: https://github.com/anpage/decompme_compilers/releases/download/wcc10.0a/wcc10.0a.tar.gz
   - id: wcc10.5
     platform: msdos
     template: common/default
