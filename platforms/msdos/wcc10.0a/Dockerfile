@@ -5,7 +5,7 @@ FROM alpine:3.18 AS base
 
 RUN mkdir -p /compilers/msdos/wcc10.0a
 
-RUN wget -O wcc10.0a.tar.gz "https://github.com/anpage/decompme_compilers/releases/download/wcc10.0a/wcc10.0a.tar.gz"
+RUN wget -O wcc10.0a.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/wcc10.0a.tar.gz"
 RUN tar xvzf wcc10.0a.tar.gz -C /compilers/msdos/wcc10.0a
 
 RUN chown -R root:root /compilers/msdos/wcc10.0a/
