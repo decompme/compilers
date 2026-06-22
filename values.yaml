@@ -989,7 +989,7 @@ compilers:
   - id: wcc10.0a
     platform: msdos
     template: common/default
-    file: https://github.com/anpage/decompme_compilers/releases/download/wcc10.0a/wcc10.0a.tar.gz
+    file: https://github.com/decompme/compilers/releases/download/compilers/wcc10.0a.tar.gz
   - id: wcc10.5
     platform: msdos
     template: common/default
