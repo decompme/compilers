@@ -561,6 +561,10 @@ compilers:
     platform: gba
     template: common/default
     file: https://github.com/pret/agbcc/releases/download/release/agbcc.tar.gz
+  - id: agbcc-fe8j
+    platform: gba
+    template: common/default
+    file: https://github.com/laqieer/agbcc/releases/download/fe8j-v1/agbcc.tar.gz
   - id: agbccpp
     platform: gba
     template: common/default
