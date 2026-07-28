@@ -620,6 +620,10 @@ compilers:
     clang_binary: clang-8
 
   # NDS
+  - id: mwcc_20_56
+    platform: nds_arm9
+    file: https://github.com/decompme/compilers/releases/download/compilers/mwcc_20_56.tar.gz
+    template: common/default
   - id: mwcc_20_72
     platform: nds_arm9
     file: *nds_mwcc
