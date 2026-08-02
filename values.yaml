@@ -618,7 +618,18 @@ compilers:
     template: switch/clang
     file: https://releases.llvm.org/8.0.0/clang+llvm-8.0.0-x86_64-apple-darwin.tar.xz
     clang_binary: clang-8
-
+  - id: clang-9.0.0
+    arch: linux
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz
+    clang_binary: clang-9
+  - id: clang-9.0.0
+    arch: darwin
+    platform: switch
+    template: switch/clang
+    file: https://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-darwin-apple.tar.xz
+    clang_binary: clang-9
   # NDS
   - id: mwcc_20_56
     platform: nds_arm9
