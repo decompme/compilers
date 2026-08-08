@@ -24,6 +24,10 @@ RUN wget -O /compilers/{{ platform }}/{{ id }}/{{ filename }} "{{ url }}"
 RUN rm -rf /compilers/{{ platform }}/{{ id }}/{{ dir }}
 {%- endfor %}
 
+{%- for src in copy_files | default([]) %}
+COPY {{ src }} /compilers/{{ platform }}/{{ id }}/{{ src.split("/")[-1] }}
+{%- endfor %}
+
 RUN chown -R root:root /compilers/{{ platform }}/{{ id }}/
 RUN chmod +x /compilers/{{ platform }}/{{ id }}/*
 
