@@ -8,9 +8,9 @@ RUN mkdir -p /compilers/ps1/gcc2.6.0-mipsel
 RUN wget -O gcc-2.6.0.tar.gz "https://github.com/decompals/old-gcc/releases/download/0.7/gcc-2.6.0.tar.gz"
 RUN tar xvzf gcc-2.6.0.tar.gz -C /compilers/ps1/gcc2.6.0-mipsel
 
-RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/e3d591646c6471a382e2671a63462b68d09ab306.zip
+RUN wget -O maspsx.zip https://github.com/mkst/maspsx/archive/86ccd7d8c89682c0562d1425bbb15a09f42eb522.zip
 RUN unzip maspsx.zip
-RUN cp -r maspsx-e3d591646c6471a382e2671a63462b68d09ab306 /compilers/ps1/gcc2.6.0-mipsel/maspsx
+RUN cp -r maspsx-86ccd7d8c89682c0562d1425bbb15a09f42eb522 /compilers/ps1/gcc2.6.0-mipsel/maspsx
 
 RUN echo '#!/bin/bash' >> as
 RUN echo 'python3 $(dirname -- $0)/maspsx/maspsx.py --run-assembler -I${COMPILER_DIR} $@' >> as
