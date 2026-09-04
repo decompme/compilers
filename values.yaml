@@ -1127,6 +1127,15 @@ compilers:
       - msvc8.0-*/include
       - msvc8.0-*/PlatformSDK/Include
 
+  - id: icc5.0.1-010525z
+    platform: win32
+    template: common/default
+    files:
+      - https://github.com/OmniBlade/decomp.me/releases/download/msvcwin9x/msvc6.0.tar.gz
+      - https://github.com/bwrsandman/icc5.0.1.010525Z/releases/download/v1/icc5.0.1-010525z.tar.gz
+    rm_dirs:
+      - MFC
+
   # DREAMCAST
   - id: shc-v5.0r10
     platform: dreamcast
