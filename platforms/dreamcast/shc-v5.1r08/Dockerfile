@@ -7,7 +7,7 @@ RUN mkdir -p /compilers/dreamcast/shc-v5.1r08
 
 RUN wget -O shc-v5.1r08.tar.gz "https://github.com/decompme/compilers/releases/download/compilers/shc-v5.1r08.tar.gz"
 RUN tar xvzf shc-v5.1r08.tar.gz -C /compilers/dreamcast/shc-v5.1r08
-RUN wget -O /compilers/dreamcast/shc-v5.1r08/rof2elf.py "https://gist.githubusercontent.com/Mc-muffin/c2d3f30e50c5c5749f994973441c503a/raw/18fbf1a19bd720d02774ed634b00b0508eaf474c/rof2elf.py"
+RUN wget -O /compilers/dreamcast/shc-v5.1r08/rof2elf.py "https://gist.githubusercontent.com/masonc15/cb2354b439e35f1400c71edfca7171ca/raw/2556b4f781d49b167be0952b4420fadd2b5a313f/rof2elf.py"
 
 RUN chown -R root:root /compilers/dreamcast/shc-v5.1r08/
 RUN chmod +x /compilers/dreamcast/shc-v5.1r08/*
