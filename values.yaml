@@ -1126,6 +1126,14 @@ compilers:
     include_dirs:
       - msvc8.0-*/include
       - msvc8.0-*/PlatformSDK/Include
+  - id: msvc12.0u4
+    platform: win32
+    template: win32/msvc
+    file: https://github.com/heinermann/compilers/releases/download/msvc12/msvc12.zip
+    bin_dir: msvc12/bin
+    include_dirs:
+      - msvc12/include
+      - msvc12/PlatformSDK/Include
 
   - id: icc5.0.1-010525z
     platform: win32
