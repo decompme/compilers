@@ -12,4 +12,4 @@ RUN mkdir compilers \
 
 FROM scratch AS release
 
-COPY --from=base /compilers/ProDG/3.9.3 /compilers/gc_wii/prodg_393
+COPY --from=base /compilers/GC/3.0a3p1 /compilers/gc_wii/mwcc_41_51213p1
