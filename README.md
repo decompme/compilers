@@ -27,4 +27,4 @@ python3 template.py
 ## Notes:
 
 - Docker image names must be lowercase therefore compiler ids will be lowercase'd before being uploaded.
-- `+` is not a valid character for Docker image names, therefore `+` will be replaced with `_` in image names before being uploaded.
+- `+` is not a valid character for Docker image names, therefore each `+` will be replaced with `plus` in image names before being uploaded (e.g. `ido5.3_c++` becomes `ido5.3_cplusplus`).
