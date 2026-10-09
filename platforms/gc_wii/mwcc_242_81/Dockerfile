@@ -6,7 +6,7 @@ FROM alpine:3.18 AS base
 RUN apk add --no-cache curl libarchive-tools
 
 RUN mkdir compilers \
-    && curl -L "https://files.decomp.dev/compilers_20251015.zip" \
+    && curl -L "https://files.decomp.dev/compilers_20251118.zip" \
     | bsdtar -xvf- -C /compilers
 
 
