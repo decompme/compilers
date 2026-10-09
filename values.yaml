@@ -900,6 +900,11 @@ compilers:
     template: common/decomp.dev
     file: *decomp_dev
     package_dir: GC/3.0a3
+  - id: mwcc_41_51213p1
+    platform: gc_wii
+    template: common/decomp.dev
+    file: *decomp_dev
+    package_dir: GC/3.0a3p1
   - id: mwcc_41_60126
     platform: gc_wii
     template: common/decomp.dev
