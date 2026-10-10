@@ -582,6 +582,10 @@ compilers:
     template: common/zip
     package_dir: saturn-compilers-*/cygnus-2.7-96Q3-bin
     file: https://github.com/sozud/saturn-compilers/archive/af27f4aa6566c1b0fa5332b488e63d6ffd28bd48.zip
+  - id: cygnus-2.7-96Q3-native
+    platform: saturn
+    template: common/default
+    file: https://github.com/sozud/saturn-compiler-repro/releases/download/v1.0.0/cc1-native.tar.gz
 
   # SWITCH
   - id: clang-3.9.1
