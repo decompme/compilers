@@ -101,10 +101,10 @@ compilers:
     arch: darwin
     file: https://github.com/decompals/ido-static-recomp/releases/download/v1.2/ido-5.3-recomp-macos.tar.gz
 
-  - id: ido5.3_c++
+  - id: ido5.3_cfront
     platform: n64
     template: common/default
-    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido5.3_c++.tar.xz?2024-03-03
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido5.3_cfront.tar.xz?2024-03-03
 
   - id: ido6.0
     platform: n64
