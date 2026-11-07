@@ -104,7 +104,7 @@ compilers:
   - id: ido5.3_cfront
     platform: n64
     template: common/default
-    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/refs/heads/n/qemu/ido5.3_cfront.tar.xz
+    file: https://github.com/LLONSIT/qemu-irix-helpers/raw/n/qemu/ido5.3_cfront.tar.xz?2024-03-03
 
   - id: ido6.0
     platform: n64
