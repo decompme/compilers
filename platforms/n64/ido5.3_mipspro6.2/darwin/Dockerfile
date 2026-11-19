@@ -1,0 +1,19 @@
+# NOTE: This file is generated automatically via template.py. Do not edit manually!
+
+
+FROM alpine:3.18 AS base
+
+RUN mkdir -p /compilers/n64/ido5.3_mipspro6.2
+
+RUN wget -O ido-5.3-recomp-macos.tar.gz "https://github.com/decompals/ido-static-recomp/releases/download/v1.4/ido-5.3-recomp-macos.tar.gz"
+RUN tar xvzf ido-5.3-recomp-macos.tar.gz -C /compilers/n64/ido5.3_mipspro6.2
+RUN wget -O ido-6.2-recomp-macos.tar.gz "https://github.com/decompals/ido-static-recomp/releases/download/v1.4/ido-6.2-recomp-macos.tar.gz"
+RUN tar xvzf ido-6.2-recomp-macos.tar.gz -C /compilers/n64/ido5.3_mipspro6.2
+
+RUN chown -R root:root /compilers/n64/ido5.3_mipspro6.2/
+RUN chmod +x /compilers/n64/ido5.3_mipspro6.2/*
+
+
+FROM scratch AS release
+
+COPY --from=base /compilers /compilers
